@@ -1,3 +1,4 @@
+import 'tw-elements';
 import './App.css';
 
 function App() {
