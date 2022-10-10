@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-photo-1 {
+    background-image: url('../public/photo1.jpg');
+}
+
+.bg-photo-2 {
+    background-image: url('../public/photo2.jpg');
+    background-size: 100%;
+}
+
+.bg-photo-3 {
+    background-image: url('../public/photo3.jpg');
+    background-size: 100%;
+}
+
+.bg-photo-4 {
+    background-image: url('../public/photo4.jpg');
+}
