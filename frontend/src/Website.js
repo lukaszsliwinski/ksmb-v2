@@ -22,14 +22,14 @@ function Website() {
                     </li>
                 </ul>
                 {/* switcher przykładowy - zrobić własny */}
-                <div class="form-check form-switch">
-                    <input class="form-check-input appearance-none w-9 -ml-10 rounded-full float-left h-5 align-top bg-white bg-no-repeat bg-contain bg-gray-300 focus:outline-none cursor-pointer shadow-sm" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-                    <label class="form-check-label inline-block text-gray-300" for="flexSwitchCheckDefault">dark mode</label>
+                <div className="form-check form-switch">
+                    <input className="form-check-input appearance-none w-9 -ml-10 rounded-full float-left h-5 align-top bg-white bg-no-repeat bg-contain bg-gray-300 focus:outline-none cursor-pointer shadow-sm" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                    <label className="form-check-label inline-block text-gray-300" for="flexSwitchCheckDefault">dark mode</label>
                 </div>                   
             </nav>
             <section className="top-0 h-screen mb-12 bg-fixed bg-center bg-cover bg-photo-1">
-                <div className="w-screen h-screen bg-black/40 backdrop-blur-sm p-20">
-                    <div className="flex items-center justify-center border-4 border-white/50 h-full">
+                <div className="w-screen h-screen bg-black/60 backdrop-blur-sm p-20">
+                    <div className="flex items-center justify-center border-4 border-white/70 h-full">
                         <img src={logo} className="h-[25rem]" />
                     </div>
                 </div>
@@ -38,20 +38,19 @@ function Website() {
                 <p>o nas</p>
             </div>
             <section className="flex items-center justify-center h-[66vh] m-auto mb-12 bg-fixed bg-center bg-cover bg-photo-2">
-                {/* filtr do zdjęć*/}
-                {/* before:content-[''] before:absolute before:inset-0 before:bg-black before:opacity-50" */}
+                <div className="w-screen h-full bg-black/60"></div>
             </section>
             <div className="max-w-lg m-auto h-full min-h-screen">
                 <p>nagrania</p>
             </div>
             <section className="flex items-center justify-center h-[66vh] m-auto mb-12 bg-fixed bg-center bg-cover bg-photo-3">
-
+                <div className="w-screen h-full bg-black/60"></div>
             </section>
             <div className="max-w-lg m-auto h-full min-h-screen">
                 <p>koncerty</p>
             </div>
             <section className="flex items-center justify-center h-[75vh] m-auto mb-12 bg-fixed bg-center bg-cover bg-photo-4">
-
+                <div className="w-screen h-full bg-black/60"></div>
             </section>
             <div className="max-w-lg m-auto h-[25vh]">
                 <p>kontakt</p>
