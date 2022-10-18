@@ -1,12 +1,23 @@
+import { useState, useEffect } from 'react';
 import 'tw-elements';
+
 import logo from './logo.svg';
-import './Website.css';
 import DarkModeSwitch from './DarkModeSwitch';
+import './Website.css';
 
 function Website() {
+    const [windowTop, setWindowTop] = useState(true);
+
+    useEffect(() => {
+        const handleScroll = () => window.scrollY === 0 ? setWindowTop(true) : setWindowTop(false);
+        window.addEventListener('scroll', handleScroll);
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [windowTop]);
+
     return (
         <>
-            <nav className="fixed z-50 flex justify-between w-full h-16 bg-black/80 backdrop-blur-md">  {/* dobrać właściwy z-index */}
+            <nav className={`fixed z-50 flex justify-between w-full h-16 ${windowTop ? 'bg-transparent' : 'bg-black/80 backdrop-blur-md'}`}>  {/* dobrać właściwy z-index */}
                 <div className="flex text-[1.8rem] py-1.5 px-3 text-gray-300"><img src={logo} className="h-[2.5rem]"/>KSMicroband</div>
                 <ul className="flex flex-row list-style-none">
                     <li className="text-[1.8rem] py-1.5 px-3 pl-6">
