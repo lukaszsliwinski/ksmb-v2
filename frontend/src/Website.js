@@ -48,19 +48,19 @@ function Website() {
             <div className="max-w-lg m-auto h-full min-h-screen">
                 <p>o nas</p>
             </div>
-            <section className="flex items-center justify-center h-[66vh] m-auto mb-12 bg-fixed bg-center bg-cover bg-photo-2">
+            <section className="flex items-center justify-center h-[66vh] m-auto mb-12 bg-fixed bg-center bg-cover bg-photo-2 bg-100%">
                 <div className="w-screen h-full bg-black/60"></div>
             </section>
             <div className="max-w-lg m-auto h-full min-h-screen">
                 <p>nagrania</p>
             </div>
-            <section className="flex items-center justify-center h-[66vh] m-auto mb-12 bg-fixed bg-center bg-cover bg-photo-3">
+            <section className="flex items-center justify-center h-[66vh] m-auto mb-12 bg-fixed bg-center bg-cover bg-photo-3 bg-100%">
                 <div className="w-screen h-full bg-black/60"></div>
             </section>
             <div className="max-w-lg m-auto h-full min-h-screen">
                 <p>koncerty</p>
             </div>
-            <section className="flex items-center justify-center h-[75vh] m-auto mb-12 bg-fixed bg-center bg-cover bg-photo-4">
+            <section className="flex items-center justify-center h-[75vh] m-auto mb-12 bg-fixed bg-center bg-cover bg-photo-4 bg-100%">
                 <div className="w-screen h-full bg-black/60"></div>
             </section>
             <div className="max-w-lg m-auto h-[25vh]">
