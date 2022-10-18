@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import 'tw-elements';
 
-import logo from './logo.svg';
+import { ReactComponent as Logo } from './logo.svg';
 import DarkModeSwitch from './DarkModeSwitch';
 import './Website.css';
 
@@ -18,7 +18,7 @@ function Website() {
     return (
         <>
             <nav className={`fixed z-50 flex justify-between w-full h-16 ${windowTop ? 'bg-transparent' : 'bg-black/80 backdrop-blur-md'}`}>  {/* dobrać właściwy z-index */}
-                <div className="flex text-[1.8rem] py-1.5 px-3 text-gray-300"><img src={logo} className="h-[2.5rem]"/>KSMicroband</div>
+                <div className="flex text-[1.8rem] py-1.5 px-3 text-gray-300"><Logo className="fill-gray-300 h-[2.5rem]" />KSMicroband</div>
                 <ul className="flex flex-row list-style-none">
                     <li className="text-[1.8rem] py-1.5 px-3 pl-6">
                         <a className="nav-link text-gray-300 hover:text-gray-500 focus:text-gray-500 p-0" href="#">o nas</a>
@@ -41,7 +41,7 @@ function Website() {
             <section className="top-0 h-screen mb-12 bg-fixed bg-center bg-cover bg-photo-1">
                 <div className="w-screen h-screen bg-black/60 backdrop-blur-sm p-20">
                     <div className="flex items-center justify-center border-4 border-white/70 h-full">
-                        <img src={logo} className="h-[25rem]" />
+                        <Logo className="fill-white/70 h-[25rem]" />
                     </div>
                 </div>
             </section>
