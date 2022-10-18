@@ -1,6 +1,7 @@
 import 'tw-elements';
 import logo from './logo.svg';
 import './Website.css';
+import DarkModeSwitch from './DarkModeSwitch';
 
 function Website() {
     return (
@@ -21,11 +22,10 @@ function Website() {
                         <a className="nav-link text-gray-300 hover:text-gray-500 focus:text-gray-500 p-0" href="#">kontakt</a>
                     </li>
                 </ul>
-                {/* switcher przykładowy - zrobić własny */}
-                <div className="form-check form-switch">
-                    <input className="form-check-input appearance-none w-9 -ml-10 rounded-full float-left h-5 align-top bg-white bg-no-repeat bg-contain bg-gray-300 focus:outline-none cursor-pointer shadow-sm" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-                    <label className="form-check-label inline-block text-gray-300" for="flexSwitchCheckDefault">dark mode</label>
-                </div>                   
+                <div className="m-4">
+                    <DarkModeSwitch />
+                </div>
+
             </nav>
             <section className="top-0 h-screen mb-12 bg-fixed bg-center bg-cover bg-photo-1">
                 <div className="w-screen h-screen bg-black/60 backdrop-blur-sm p-20">
