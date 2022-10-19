@@ -24,23 +24,29 @@ function Website() {
 
     return (
         <div className="all-inside:transition-colors all-inside:ease-in-out all-inside:duration-200">
-            <nav className={`fixed z-50 flex justify-between w-full h-16 ${windowTop ? 'bg-transparent' : 'bg-temp-dark/80 backdrop-blur-md'} ease-in-out duration-300`}>  {/* dobrać właściwy z-index */}
-                <div className="flex text-[1.8rem] py-1.5 px-3 text-temp-light"><Logo className="fill-temp-light h-[2.5rem]" />KSMicroband</div>
-                <ul className="flex flex-row list-style-none">
-                    <li className="text-[1.8rem] py-1.5 px-3 pl-6">
-                        <a className="nav-link text-temp-light p-0" href="#">o nas</a>
-                    </li>
-                    <li className="text-[1.8rem] py-1.5 px-3">
-                        <a className="nav-link text-temp-light p-0" href="#">muzyka</a>
-                    </li>
-                    <li className="text-[1.8rem] py-1.5 px-3">
-                        <a className="nav-link text-temp-light p-0" href="#">koncerty</a>
-                    </li>
-                    <li className="text-[1.8rem] py-1.5 px-3">
-                        <a className="nav-link text-temp-light p-0" href="#">kontakt</a>
-                    </li>
-                </ul>
-                <div className="m-4">
+            <nav className={`fixed z-10 flex w-full h-16 px-5 ${windowTop ? 'bg-transparent' : 'bg-temp-dark/80 backdrop-blur-md'} ease-in-out duration-300`}>
+                <div className="basis-1/3 flex items-center text-[1.8rem] text-temp-light">
+                    <span>KSMicroband</span>
+                </div>
+                <div className="basis-1/3 flex justify-center items-center h-full">
+                    <ul className="flex flex-row space-x-6 list-style-none">
+                        <li className="text-[1.8rem]">
+                            <a className="nav-link text-temp-light" href="#">o nas</a>
+                        </li>
+                        <li className="text-[1.8rem]">
+                            <a className="nav-link text-temp-light" href="#">muzyka</a>
+                        </li>
+                        <li className="text-[1.8rem]">
+                            <a className="nav-link text-temp-light" href="#">koncerty</a>
+                        </li>
+                        <li className="text-[1.8rem]">
+                            <a className="nav-link text-temp-light" href="#">kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div className="basis-1/3 flex justify-end items-center h-full">
                     <DarkModeSwitch darkMode={darkMode} setDarkMode={setDarkMode}/>
                 </div>
 
