@@ -9,10 +9,10 @@ module.exports = {
                 'temp-dark': '#333333'
             },
             backgroundImage: {
-                'photo-1': "url('../public/photo1.jpg')",
-                'photo-2': "url('../public/photo2.jpg')",
-                'photo-3': "url('../public/photo3.jpg')",
-                'photo-4': "url('../public/photo4.jpg')"
+                'photo-1': "url('../src/photos/background1.jpg')",
+                'photo-2': "url('../src/photos/background2.jpg')",
+                'photo-3': "url('../src/photos/background3.jpg')",
+                'photo-4': "url('../src/photos/background4.jpg')"
             },
             backgroundSize: {
                 '100%': '100%'
