@@ -37,10 +37,8 @@ function Website() {
 
 
     return (
-        <div className="" id="main">
-        {/* <div className="all-inside:transition-colors all-inside:ease-in-out all-inside:duration-200" id="main"></div>
-            nadpisuje transition w tw-elements - poprawić    
-        */}
+        <div className="all-inside:transition-colors all-inside:ease-in-out all-inside:duration-200" id="main">
+ 
             <nav className={`fixed z-10 flex w-full h-16 px-5 ${windowTop ? 'bg-transparent' : 'bg-temp-dark/80 backdrop-blur-md'} ease-in-out duration-300`}>
                 <div className="basis-1/3 flex items-center text-[1.8rem] text-temp-light">
                     <a className="nav-link text-temp-light" href="#main">KSMicroband</a>
@@ -197,10 +195,10 @@ function Website() {
                     <div className="flex flex-col justify-start items-center w-full lg:w-1/2">
                         <p className="font-bold mb-1">jesteśmy również na</p>
                         <div className="flex items-start">
-                            <a href="https://www.facebook.com/ksmicroband"  target="_blank" rel="noopener noreferrer" role="button" data-mdb-ripple="true" data-mdb-ripple-color="light"  className="inline-block px-6 py-2.5 mx-2 bg-[#1877f2] text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out">
+                            <a href="https://www.facebook.com/ksmicroband" target="_blank" rel="noopener noreferrer" role="button" data-mdb-ripple="true" data-mdb-ripple-color="light"  className="inline-block px-6 py-2.5 mx-2 bg-[#1877f2] text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none">
                                 <Facebook className="w-4 h-4" />
                             </a>
-                            <a href="https://www.youtube.com/channel/UCVo9xMX2P-y9wdHLdP29xqQ" target="_blank" rel="noopener noreferrer" role="button" data-mdb-ripple="true" data-mdb-ripple-color="light" className="inline-block px-6 py-2.5 mx-2 bg-[#ff0000] text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out">
+                            <a href="https://www.youtube.com/channel/UCVo9xMX2P-y9wdHLdP29xqQ" target="_blank" rel="noopener noreferrer" role="button" data-mdb-ripple="true" data-mdb-ripple-color="light" className="inline-block px-6 py-2.5 mx-2 bg-[#ff0000] text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none">
                                 <Youtube className="w-4 h-4" />
                             </a>
                         </div>
