@@ -37,7 +37,10 @@ function Website() {
 
 
     return (
-        <div className="all-inside:transition-colors all-inside:ease-in-out all-inside:duration-200" id="main">
+        <div className="" id="main">
+        {/* <div className="all-inside:transition-colors all-inside:ease-in-out all-inside:duration-200" id="main"></div>
+            nadpisuje transition w tw-elements - poprawić    
+        */}
             <nav className={`fixed z-10 flex w-full h-16 px-5 ${windowTop ? 'bg-transparent' : 'bg-temp-dark/80 backdrop-blur-md'} ease-in-out duration-300`}>
                 <div className="basis-1/3 flex items-center text-[1.8rem] text-temp-light">
                     <a className="nav-link text-temp-light" href="#main">KSMicroband</a>
@@ -143,11 +146,26 @@ function Website() {
 
 
             </section>
+
             <div className="flex items-center justify-center h-[66vh] m-auto bg-fixed bg-center bg-photo-2 bg-100%">
                 <div className="w-screen h-full bg-black/60"></div>
             </div>
-            <section className="w-full h-full min-h-screen bg-temp-light dark:bg-temp-dark" id="music">
-                <p className="text-temp-dark dark:text-temp-light">muzyka</p>
+
+            <section className="flex w-full h-full min-h-screen p-28 bg-temp-light dark:bg-temp-dark" id="music">
+                <div className="flex justify-center w-1/2">
+                    <div className="block rounded-lg shadow-lg w-9/12 max-w-6xl bg-white">
+                        demo
+                    </div>
+                </div>
+                <div className="flex justify-center w-1/2">
+                    <div className="block rounded-lg shadow-lg w-9/12 max-w-6xl bg-white">
+                        video
+                    </div>
+                </div>
+                
+                
+
+
             </section>
             <div className="flex items-center justify-center h-[66vh] m-auto bg-fixed bg-center bg-photo-3 bg-100%">
                 <div className="w-screen h-full bg-black/60"></div>
