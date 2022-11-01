@@ -185,10 +185,10 @@ function Website() {
                         <p className="font-bold mb-1">jesteśmy również na</p>
                         <div className="flex items-start">
                             
-                            <a href="#!" role="button" className="mx-4 mt-0.5">
+                            <a href="https://www.facebook.com/ksmicroband"  target="_blank" rel="noopener noreferrer" role="button" className="mx-4 mt-0.5">
                                 <Facebook className="w-10 h-10 fill-[#1877f2]" />
                             </a>
-                            <a href="#!" role="button" className="mx-4">
+                            <a href="https://www.youtube.com/channel/UCVo9xMX2P-y9wdHLdP29xqQ" target="_blank" rel="noopener noreferrer" role="button" className="mx-4">
                                 <Youtube className="w-12 h-12 fill-[#ff0000]" />
                             </a>
                         </div>
