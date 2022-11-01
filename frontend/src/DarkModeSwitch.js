@@ -1,5 +1,5 @@
-import { ReactComponent as MoonIcon } from './moon.svg';
-import { ReactComponent as SunIcon } from './sun.svg';
+import { ReactComponent as MoonIcon } from './svg/moon.svg';
+import { ReactComponent as SunIcon } from './svg/sun.svg';
 
 function DarkModeSwitch({ darkMode, setDarkMode }) {
     return (

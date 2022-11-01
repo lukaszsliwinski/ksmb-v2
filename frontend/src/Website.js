@@ -1,7 +1,11 @@
 import { useState, useEffect } from 'react';
 import 'tw-elements';
 
-import { ReactComponent as Logo } from './logo.svg';
+import { ReactComponent as Logo } from './svg/logo.svg';
+import { ReactComponent as Mail } from './svg/mail.svg';
+import { ReactComponent as Facebook } from './svg/facebook.svg';
+import { ReactComponent as Youtube } from './svg/youtube.svg';
+
 import kubaBio from './photos/kubaBio.jpg';
 import lukaszBio from './photos/lukaszBio.jpg';
 import microbandBio from './photos/microbandBio.jpg';
@@ -61,16 +65,16 @@ function Website() {
                 </div>
 
             </nav>
-            <section className="top-0 bg-fixed bg-center bg-photo-1 bg-100%">
+            <div className="top-0 bg-fixed bg-center bg-photo-1 bg-100%">
                 <div className="w-screen h-screen bg-black/60 backdrop-blur-sm p-20">
                     <div className="flex items-center justify-center border-4 border-temp-light/70 h-full">
                         <Logo className="fill-temp-light/70 h-[25rem]" />
                     </div>
                 </div>
-            </section>
+            </div>
 
 
-            <div className="w-full h-full min-h-screen p-28 bg-temp-light dark:bg-temp-dark" id="about">
+            <section className="w-full h-full min-h-screen p-28 bg-temp-light dark:bg-temp-dark" id="about">
 
                     <div className="block mb-10 rounded-lg shadow-lg max-w-6xl bg-white">
                         <div className="flex flex-wrap items-center">
@@ -143,25 +147,58 @@ function Website() {
                     </div>
 
 
-            </div>
-            <section className="flex items-center justify-center h-[66vh] m-auto bg-fixed bg-center bg-photo-2 bg-100%">
-                <div className="w-screen h-full bg-black/60"></div>
             </section>
-            <div className="w-full h-full min-h-screen bg-temp-light dark:bg-temp-dark" id="music">
+            <div className="flex items-center justify-center h-[66vh] m-auto bg-fixed bg-center bg-photo-2 bg-100%">
+                <div className="w-screen h-full bg-black/60"></div>
+            </div>
+            <section className="w-full h-full min-h-screen bg-temp-light dark:bg-temp-dark" id="music">
                 <p className="text-temp-dark dark:text-temp-light">muzyka</p>
-            </div>
-            <section className="flex items-center justify-center h-[66vh] m-auto bg-fixed bg-center bg-photo-3 bg-100%">
-                <div className="w-screen h-full bg-black/60"></div>
             </section>
-            <div className="w-full h-full min-h-screen bg-temp-light dark:bg-temp-dark" id="concerts">
+            <div className="flex items-center justify-center h-[66vh] m-auto bg-fixed bg-center bg-photo-3 bg-100%">
+                <div className="w-screen h-full bg-black/60"></div>
+            </div>
+            <section className="w-full h-full min-h-screen bg-temp-light dark:bg-temp-dark" id="concerts">
                 <p className="text-temp-dark dark:text-temp-light">koncerty</p>
-            </div>
-            <section className="flex items-center justify-center h-[66vh] m-auto bg-fixed bg-center bg-photo-4 bg-100%">
-                <div className="w-screen h-full bg-black/60"></div>
             </section>
-            <div className="w-full h-[34vh] bg-temp-light dark:bg-temp-dark" id="footer">
-                <p className="text-temp-dark dark:text-temp-light">kontakt</p>
+            <div className="flex items-center justify-center h-[66vh] m-auto bg-fixed bg-center bg-photo-4 bg-100%">
+                <div className="w-screen h-full bg-black/60"></div>
             </div>
+
+
+            <section className="flex flex-col justify-between w-full h-[34vh] pt-20 pb-4 bg-temp-light dark:bg-temp-dark" id="footer">
+                <div className="flex">
+                    <div className="flex justify-center w-full lg:w-1/2">
+
+                        <div className="flex items-start">
+                            <div className="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                                <Mail className="w-6 text-white" />
+                            </div>
+
+                            <div className="ml-6">
+                                <p className="font-bold mb-1">kontakt w sprawie koncertów</p>
+                                <p className="text-gray-500">ksmicroband@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col justify-start items-center w-full lg:w-1/2">
+                        <p className="font-bold mb-1">jesteśmy również na</p>
+                        <div className="flex items-start">
+                            
+                            <a href="#!" role="button" className="mx-4 mt-0.5">
+                                <Facebook className="w-10 h-10 fill-[#1877f2]" />
+                            </a>
+                            <a href="#!" role="button" className="mx-4">
+                                <Youtube className="w-12 h-12 fill-[#ff0000]" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="flex justify-center w-full">
+                    <p>&copy; 2021-2022 KSMICROBAND</p>
+                </div>
+            </section>
         </div>
     );
 }
