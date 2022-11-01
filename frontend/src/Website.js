@@ -86,12 +86,12 @@ function Website() {
                                     <h2 className="text-3xl font-bold mb-2 ">Kuba Kołodziejczyk</h2>
                                     <p className="font-semibold mb-4">skrzypce</p>
                                     <p className="text-justify text-gray-500 mb-6">
-                                        Skrzypce towarzyszą mi od 7&nbsp;roku życia, 
-                                        obecnie gram muzykę klasyczną i&nbsp;rozrywkową ale też uczę jak na nich grać. 
-                                        Zagrałem około 500 koncertów na scenach Śląska i&nbsp;w&nbsp;innych rejonach kraju, 
-                                        a&nbsp;także w&nbsp;Niemczech, Austrii, Włoszech, Hiszpanii oraz Japonii. Granie muzyki jest 
-                                        dla mnie taką fajną podróżą, gdzie ciągle można odkrywać nowe horyzonty i&nbsp;barwy. 
-                                        Takim właśnie muzycznym podróżowaniem jest granie z&nbsp;Łukaszem.
+                                        Skrzypek zajmujący się muzyką klasyczną, rozrywkową oraz uczący rzemiosła. Gra od 7&nbsp;roku życia. 
+                                        Na co dzień pracuje jako skrzypek w&nbsp;Filharmonii Śląskiej. Zagrał około 600&nbsp;koncertów na scenach Śląska 
+                                        i&nbsp;reszty kraju, a&nbsp;także w&nbsp;Niemczech, Austrii, Włoszech, Hiszpanii oraz Japonii. Występował z&nbsp;licznymi 
+                                        gwiazdami muzyki rozrywkowej, m.in.:&nbsp;Kuba Badach, Krzesimir Dębski, Waldemar Malicki, Leszek Możdzer, 
+                                        Grzegorz Turnau i&nbsp;inni. Muzyka to dla niego podróż, odkrywanie nowych horyzontów i&nbsp;barw -&nbsp;takim właśnie 
+                                        muzycznym podróżowaniem jest granie z&nbsp;Łukaszem.
                                     </p>
                                 </div>
                             </div>
@@ -105,12 +105,10 @@ function Website() {
                                     <h2 className="text-3xl font-bold mb-2 ">Łukasz Śliwiński</h2>
                                     <p className="font-semibold mb-4">gitara</p>
                                     <p className="text-justify text-gray-500 mb-6">
-                                        Na gitarze gram od 15&nbsp;roku życia zdobywając doświadczenie sceniczne i&nbsp;studyjne 
-                                        w&nbsp;zespołach rockowych. Od kilku lat rozszerzam spektrum zainteresowań sięgając po 
-                                        gatunki muzyczne o&nbsp;różnej estetyce, kierując swoją uwagę głównie w&nbsp;stronę muzyki 
-                                        improwizowanej. Stawiam na przestrzeń, spontaniczność i&nbsp;nieprzewidywalność -&nbsp;najwięcej 
-                                        radości w&nbsp;grze sprawia mi, kiedy nie wiem jaki będzie następny dźwięk. 
-                                        Potrzebę muzycznej wolności zaspokajam grając w Microbandzie.
+                                        Gitarzysta samouk, rozpoczął swoją gitarową podróż w&nbsp;wieku 15&nbsp;lat. Doświadczenie sceniczne i&nbsp;studyjne 
+                                        zdobywał w&nbsp;zespołach rockowych. Od kilku lat rozszerza spektrum zainteresowań czerpiąc z&nbsp;gatunków muzycznych 
+                                        o&nbsp;różnej estetyce, kierując swoją uwagę głównie w&nbsp;stronę muzyki improwizowanej. Stawia na nieprzewidywalność, 
+                                        spontaniczność i&nbsp;przestrzeń. Potrzebę muzycznej wolności zaspokaja grając w&nbsp;Microbandzie.
                                     </p>
                                 </div>
                             </div>
@@ -129,17 +127,14 @@ function Website() {
                                 <div className="px-3 py-6 md:px-6">
                                     <h2 className="text-3xl font-bold mb-2 ">Microband</h2>
                                     <p className="text-justify text-gray-500 mb-6">
-                                        Pomysł na duet narodził się na wspólnych spotkaniach, których jedynym celem było oderwanie się 
-                                        od dotychczasowych przyzwyczajeń muzycznych, rockowych oraz klasycznych. Z&nbsp;połączenia różnych, 
-                                        pozornie odmiennych temperamentów muzycznych, uzyskaliśmy nową jakość, cały czas ucząc się od siebie 
-                                        innego spojrzenia na muzykę. Aby nie zamykać sobie na starcie żadnej drogi postanowiliśmy nie 
-                                        umawiać się na konkretną stylistykę, tylko zobaczyć, jaka będzie dla nas najbardziej naturalna. 
-                                        Inspiracje przychodziły z&nbsp;takich stron, jak muzyka folkowa, rockowa, jazzowa, klasyczna, filmowa, 
-                                        bałkańska, a&nbsp;nawet hebrajska. Z&nbsp;improwizowanych sesji powoli zbieraliśmy materiał, który 
-                                        uporządkowaliśmy w&nbsp;autorskie kompozycje instrumentalne. Wykorzystując czas pandemii i&nbsp;niemożność 
-                                        koncertowania zarejestrowaliśmy w domach naszą twórczość. Czujemy, że nadszedł czas na kolejny krok 
-                                        -&nbsp;przedstawienie się, pokazanie szerzej i&nbsp;granie dla ludzi. Rozpoczynamy wspólną podróż, 
-                                        nie wiedząc gdzie nas zaprowadzi. I&nbsp;to w&nbsp;tym wszystkim lubimy najbardziej.
+                                        Duet KSMicroband gra autorską muzykę, która łączy korzenie rockowych oraz klasycznych dźwięków. Z&nbsp;połączenia różnych, 
+                                        pozornie odmiennych temperamentów muzycznych, powstała nową jakość. Zespół nie wspomaga się sekcją basu i&nbsp;perkusji, 
+                                        więc wszystkie warstwy brzmienia aranżuje i&nbsp;wykonuje samodzielnie - dla wzbogacenia brzmienia na koncertach wykorzystywany jest looper. 
+                                        Element improwizacji oparty na źródłach muzyki folkowej i&nbsp;jazzowej jest również obecny. Oprócz bazowego zderzenia gitarowej muzyki 
+                                        rockowej i&nbsp;klasycznego, śpiewnego brzmienia skrzypiec inspiracje przyszły ze świata muzyki folkowej, jazzowej, filmowej, bałkańskiej 
+                                        i&nbsp;hebrajskiej. Materiał z&nbsp;improwizowanych sesji został uporządkowany w&nbsp;autorskie kompozycje instrumentalne. Wykorzystując czas pandemii 
+                                        i&nbsp;niemożności koncertowania, muzycy zarejestrowali utwory we własnych domach.
+
                                     </p>
                                 </div>
                             </div>
