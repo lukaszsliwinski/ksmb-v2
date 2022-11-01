@@ -197,12 +197,11 @@ function Website() {
                     <div className="flex flex-col justify-start items-center w-full lg:w-1/2">
                         <p className="font-bold mb-1">jesteśmy również na</p>
                         <div className="flex items-start">
-                            
-                            <a href="https://www.facebook.com/ksmicroband"  target="_blank" rel="noopener noreferrer" role="button" className="mx-4 mt-0.5">
-                                <Facebook className="w-10 h-10 fill-[#1877f2]" />
+                            <a href="https://www.facebook.com/ksmicroband"  target="_blank" rel="noopener noreferrer" role="button" data-mdb-ripple="true" data-mdb-ripple-color="light"  className="inline-block px-6 py-2.5 mx-2 bg-[#1877f2] text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out">
+                                <Facebook className="w-4 h-4" />
                             </a>
-                            <a href="https://www.youtube.com/channel/UCVo9xMX2P-y9wdHLdP29xqQ" target="_blank" rel="noopener noreferrer" role="button" className="mx-4">
-                                <Youtube className="w-12 h-12 fill-[#ff0000]" />
+                            <a href="https://www.youtube.com/channel/UCVo9xMX2P-y9wdHLdP29xqQ" target="_blank" rel="noopener noreferrer" role="button" data-mdb-ripple="true" data-mdb-ripple-color="light" className="inline-block px-6 py-2.5 mx-2 bg-[#ff0000] text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out">
+                                <Youtube className="w-4 h-4" />
                             </a>
                         </div>
                     </div>
