@@ -176,9 +176,9 @@ function Website() {
             </div>
 
 
-            <section className="flex flex-col justify-between w-full h-[34vh] pt-20 pb-4 bg-temp-light dark:bg-temp-dark" id="footer">
+            <section className="flex flex-col justify-between w-full h-[34vh] pt-16 pb-4 bg-temp-light dark:bg-temp-dark" id="footer">
                 <div className="flex">
-                    <div className="flex justify-center w-full lg:w-1/2">
+                    <div className="flex justify-center w-full lg:w-1/3">
 
                         <div className="flex items-start">
                             <div className="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
@@ -192,7 +192,19 @@ function Website() {
                         </div>
                     </div>
 
-                    <div className="flex flex-col justify-start items-center w-full lg:w-1/2">
+                    <div className="flex flex-col justify-start items-center w-full lg:w-1/3">
+                        <p className="font-bold mb-1">dokumenty do pobrania</p>
+                        <div className="flex flex-col">
+                            <button type="button" class="inline-block px-6 py-2 my-1 border-2 border-gray-800 text-gray-800 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                                oferta koncertowa
+                            </button>
+                            <button type="button" class="inline-block px-6 py-2 my-1 border-2 border-gray-800 text-gray-800 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                                rider techniczny
+                            </button>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col justify-start items-center w-full lg:w-1/3">
                         <p className="font-bold mb-1">jesteśmy również na</p>
                         <div className="flex items-start">
                             <a href="https://www.facebook.com/ksmicroband" target="_blank" rel="noopener noreferrer" role="button" data-mdb-ripple="true" data-mdb-ripple-color="light"  className="inline-block px-6 py-2.5 mx-2 bg-[#1877f2] text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none">
@@ -203,6 +215,7 @@ function Website() {
                             </a>
                         </div>
                     </div>
+
                 </div>
 
                 <div className="flex justify-center w-full">
