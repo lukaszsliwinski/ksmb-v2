@@ -11,6 +11,7 @@ import lukaszBio from './photos/lukaszBio.jpg';
 import microbandBio from './photos/microbandBio.jpg';
 
 import DarkModeSwitch from './DarkModeSwitch';
+import AudioPlayer from './AudioPlayer';
 import './Website.css';
 
 function Website() {
@@ -135,7 +136,6 @@ function Website() {
                                         rockowej i&nbsp;klasycznego, śpiewnego brzmienia skrzypiec inspiracje przyszły ze świata muzyki folkowej, jazzowej, filmowej, bałkańskiej 
                                         i&nbsp;hebrajskiej. Materiał z&nbsp;improwizowanych sesji został uporządkowany w&nbsp;autorskie kompozycje instrumentalne. Wykorzystując czas pandemii 
                                         i&nbsp;niemożności koncertowania, muzycy zarejestrowali utwory we własnych domach.
-
                                     </p>
                                 </div>
                             </div>
@@ -152,7 +152,7 @@ function Website() {
             <section className="flex w-full h-full min-h-screen p-28 bg-temp-light dark:bg-temp-dark" id="music">
                 <div className="flex justify-center w-1/2">
                     <div className="block rounded-lg shadow-lg w-9/12 max-w-6xl bg-white">
-                        demo
+                        <AudioPlayer />
                     </div>
                 </div>
                 <div className="flex justify-center w-1/2">
@@ -195,10 +195,10 @@ function Website() {
                     <div className="flex flex-col justify-start items-center w-full lg:w-1/3">
                         <p className="font-bold mb-1">dokumenty do pobrania</p>
                         <div className="flex flex-col">
-                            <button type="button" class="inline-block px-6 py-2 my-1 border-2 border-gray-800 text-gray-800 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                            <button type="button" className="inline-block px-6 py-2 my-1 border-2 border-gray-800 text-gray-800 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
                                 oferta koncertowa
                             </button>
-                            <button type="button" class="inline-block px-6 py-2 my-1 border-2 border-gray-800 text-gray-800 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                            <button type="button" className="inline-block px-6 py-2 my-1 border-2 border-gray-800 text-gray-800 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
                                 rider techniczny
                             </button>
                         </div>
