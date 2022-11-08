@@ -12,6 +12,7 @@ import microbandBio from './photos/microbandBio.jpg';
 
 import DarkModeSwitch from './DarkModeSwitch';
 import AudioPlayer from './AudioPlayer';
+import VideoPlayer from './VideoPlayer';
 import './Website.css';
 
 function Website() {
@@ -157,7 +158,7 @@ function Website() {
                 </div>
                 <div className="flex justify-center w-1/2">
                     <div className="block rounded-lg shadow-lg w-9/12 max-w-6xl bg-white">
-                        video
+                        <VideoPlayer />
                     </div>
                 </div>
                 
