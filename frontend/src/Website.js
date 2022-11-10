@@ -6,9 +6,9 @@ import { ReactComponent as Mail } from './svg/mail.svg';
 import { ReactComponent as Facebook } from './svg/facebook.svg';
 import { ReactComponent as Youtube } from './svg/youtube.svg';
 
-import kubaBio from './photos/kubaBio.jpg';
-import lukaszBio from './photos/lukaszBio.jpg';
-import microbandBio from './photos/microbandBio.jpg';
+import kuba from './photos/kuba.jpg';
+import lukasz from './photos/lukasz.jpg';
+import microband from './photos/microband.jpg';
 import concert from './photos/concert.jpg';
 
 import DarkModeSwitch from './DarkModeSwitch';
@@ -80,16 +80,18 @@ function Website() {
 
             <section className="w-full h-full min-h-screen p-28 bg-temp-light dark:bg-temp-dark" id="about">
 
-                    <div className="block mb-10 rounded-lg shadow-lg max-w-6xl bg-white">
-                        <div className="flex flex-wrap items-center">
-                            <div className="grow-0 shrink-0 basis-auto block lg:flex w-full lg:w-6/12 xl:w-4/12">
-                                <img src={kubaBio} alt="img" className="w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg slopedframe" />
+
+                    <div className="container mx-auto 2xl:max-w-screen-xl text-center lg:text-left">
+                        <div className="grid lg:grid-cols-3 xl:grid-cols-7 items-center">
+                            <div className="xl:col-span-2 mx-auto -mb-6 w-11/12 md:w-3/4 lg:mb-0 lg:w-full">
+                                <img src={kuba} className="w-full rounded-lg shadow-lg" alt="bio photo" />
                             </div>
-                            <div className="grow-0 shrink-0 basis-auto w-full lg:w-6/12 xl:w-8/12">
-                                <div className="px-3 py-6 md:px-6">
-                                    <h2 className="text-3xl font-bold mb-2 ">Kuba Kołodziejczyk</h2>
-                                    <p className="font-semibold mb-4">skrzypce</p>
-                                    <p className="text-justify text-gray-500 mb-6">
+
+                            <div className="lg:col-span-2 xl:col-span-5 mb-14 lg:mb-0">
+                                <div className="block rounded-lg shadow-lg p-6 md:px-12 lg:-translate-x-6"
+                                    style={{background: "hsla(0, 0%, 100%, 0.55)", backdropFilter: "blur(30px)"}}>
+                                    <h2 className="text-xl font-bold mb-2">Kuba Kołodziejczyk</h2>
+                                    <p className="text-[.9rem] text-justify text-gray-500 mb-0">
                                         Skrzypek zajmujący się muzyką klasyczną, rozrywkową oraz uczący rzemiosła. Gra od 7&nbsp;roku życia. 
                                         Na co dzień pracuje jako skrzypek w&nbsp;Filharmonii Śląskiej. Zagrał około 600&nbsp;koncertów na scenach Śląska 
                                         i&nbsp;reszty kraju, a&nbsp;także w&nbsp;Niemczech, Austrii, Włoszech, Hiszpanii oraz Japonii. Występował z&nbsp;licznymi 
@@ -102,13 +104,16 @@ function Website() {
                         </div>
                     </div>
 
-                    <div className="block ml-auto mb-10 rounded-lg shadow-lg max-w-6xl bg-white">
-                        <div className="flex flex-wrap items-center">
-                            <div className="grow-0 shrink-0 basis-auto w-full lg:w-6/12 xl:w-8/12">
-                                <div className="px-3 py-6 md:px-6">
-                                    <h2 className="text-3xl font-bold mb-2 ">Łukasz Śliwiński</h2>
-                                    <p className="font-semibold mb-4">gitara</p>
-                                    <p className="text-justify text-gray-500 mb-6">
+                    <div className="container mx-auto 2xl:max-w-screen-xl text-center lg:text-left">
+                        <div className="grid grid-flow-row-dense lg:grid-cols-3 xl:grid-cols-7 items-center">
+                            <div className="block lg:hidden xl:col-span-2 mx-auto -mb-6 w-11/12 md:w-3/4 lg:mb-0 lg:w-full">
+                                <img src={lukasz} className="w-full rounded-lg shadow-lg" alt="bio photo" />
+                            </div>
+                            <div className="lg:col-span-2 xl:col-span-5 mb-14 lg:mb-0">
+                                <div className="block rounded-lg shadow-lg p-6 md:px-12 lg:translate-x-6"
+                                    style={{background: "hsla(0, 0%, 100%, 0.55)", backdropFilter: "blur(30px)"}}>
+                                    <h2 className="text-xl font-bold mb-2">Łukasz Śliwiński</h2>
+                                    <p className="text-[.9rem] text-justify text-gray-500 mb-0">
                                         Gitarzysta samouk, rozpoczął swoją gitarową podróż w&nbsp;wieku 15&nbsp;lat. Doświadczenie sceniczne i&nbsp;studyjne 
                                         zdobywał w&nbsp;zespołach rockowych. Od kilku lat rozszerza spektrum zainteresowań czerpiąc z&nbsp;gatunków muzycznych 
                                         o&nbsp;różnej estetyce, kierując swoją uwagę głównie w&nbsp;stronę muzyki improwizowanej. Stawia na nieprzewidywalność, 
@@ -116,21 +121,25 @@ function Website() {
                                     </p>
                                 </div>
                             </div>
-                            <div className="grow-0 shrink-0 basis-auto block lg:flex w-full lg:w-6/12 xl:w-4/12">
-                                <img src={lukaszBio} alt="img" className="w-full rounded-t-lg lg:rounded-tl-none lg:rounded-br-lg slopedframe2" />
+                            <div className="hidden lg:block xl:col-span-2 mx-auto -mb-6 w-11/12 md:w-3/4 lg:mb-0 lg:w-full">
+                                <img src={lukasz} className="w-full rounded-lg shadow-lg" alt="bio photo" />
                             </div>
+
+
                         </div>
                     </div>
 
-                    <div className="block mb-10 rounded-lg shadow-lg max-w-6xl bg-white">
-                        <div className="flex flex-wrap items-center">
-                            <div className="grow-0 shrink-0 basis-auto block lg:flex w-full lg:w-6/12 xl:w-4/12">
-                                <img src={microbandBio} alt="img" className="w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg slopedframe" />
+                    <div className="container mx-auto 2xl:max-w-screen-xl text-center lg:text-left">
+                        <div className="grid lg:grid-cols-3 xl:grid-cols-7 items-center">
+                            <div className="xl:col-span-2 mx-auto -mb-6 w-11/12 md:w-3/4 lg:mb-0 lg:w-full">
+                                <img src={microband} className="w-full rounded-lg shadow-lg" alt="bio photo" />
                             </div>
-                            <div className="grow-0 shrink-0 basis-auto w-full lg:w-6/12 xl:w-8/12">
-                                <div className="px-3 py-6 md:px-6">
-                                    <h2 className="text-3xl font-bold mb-2 ">Microband</h2>
-                                    <p className="text-justify text-gray-500 mb-6">
+
+                            <div className="lg:col-span-2 xl:col-span-5 mb-14 lg:mb-0">
+                                <div className="block rounded-lg shadow-lg p-6 md:px-12 lg:-translate-x-6"
+                                    style={{background: "hsla(0, 0%, 100%, 0.55)", backdropFilter: "blur(30px)"}}>
+                                    <h2 className="text-xl font-bold mb-2">Microband</h2>
+                                    <p className="text-[.9rem] text-justify text-gray-500 mb-0">
                                         Duet KSMicroband gra autorską muzykę, która łączy korzenie rockowych oraz klasycznych dźwięków. Z&nbsp;połączenia różnych, 
                                         pozornie odmiennych temperamentów muzycznych, powstała nową jakość. Zespół nie wspomaga się sekcją basu i&nbsp;perkusji, 
                                         więc wszystkie warstwy brzmienia aranżuje i&nbsp;wykonuje samodzielnie - dla wzbogacenia brzmienia na koncertach wykorzystywany jest looper. 
@@ -181,24 +190,21 @@ function Website() {
                         </div>
 
                         <div className="lg:col-span-2 xl:col-span-5">
-                            <div className="block rounded-lg shadow-lg px-6 py-8 md:px-12 lg:-ml-14"
+                            <div className="block rounded-lg shadow-lg p-6 md:px-12 lg:-translate-x-14"
                                 style={{background: "hsla(0, 0%, 100%, 0.55)", backdropFilter: "blur(30px)"}}>
-                                {/* <h2 className="text-2xl font-bold mb-3">Microband</h2> */}
-                                <p className="text-justify text-gray-500 mb-0">
-                                Repertuar duetu tworzą kompozycje autorskie. Na przestrzeni każdego utworu łączą się
-                                motywy muzyczne inspirowane różnymi stylami. W&nbsp;repertuarze znajdują się utwory
-                                energiczne, sprawdzające się zarówno na początku jak i&nbsp;na końcu występu, inspirowane muzyką rockową, bałkańskimi rytmami czy hiszpańskim
-                                folklorem. Dopełnieniem są utwory spokojniejsze, gdzie folkowa żywiołowość łączy się z&nbsp;amerykańską psychodelią i&nbsp;bluesem. Koncert jest częściowo
-                                improwizowany dlatego każdy brzmi nieco inaczej. Oprócz koncertu autorskiego zespół oferuje połączenie wykonania muzyki na żywo z&nbsp;wernisażem malarstwa, grafiki,
-                                fotografii czy innych działań artystycznych. Muzyka KSMicroband w&nbsp;zamierzeniu ma być
-                                artystycznie kolorowa, z&nbsp;odniesieniami do różnych przestrzeni artystycznych i&nbsp;duchowych.
-                                Technicznie melodyjna i&nbsp;jednocześnie ambitna, o&nbsp;ciekawej strukturze. To wszystko wskazuje na
-                                możliwość łączenia jej z&nbsp;innymi działaniami artystycznymi dla jeszcze ciekawszego efektu.
+                                <p className="text-[.9rem] text-justify text-gray-500 mb-0">
+                                    Repertuar duetu tworzą kompozycje autorskie. Na przestrzeni każdego utworu łączą się
+                                    motywy muzyczne inspirowane różnymi stylami. W&nbsp;repertuarze znajdują się utwory
+                                    energiczne, sprawdzające się zarówno na początku jak i&nbsp;na końcu występu, inspirowane muzyką rockową, bałkańskimi rytmami czy hiszpańskim
+                                    folklorem. Dopełnieniem są utwory spokojniejsze, gdzie folkowa żywiołowość łączy się z&nbsp;amerykańską psychodelią i&nbsp;bluesem. Koncert jest częściowo
+                                    improwizowany dlatego każdy brzmi nieco inaczej. Oprócz koncertu autorskiego zespół oferuje połączenie wykonania muzyki na żywo z&nbsp;wernisażem malarstwa, grafiki,
+                                    fotografii czy innych działań artystycznych. Muzyka KSMicroband w&nbsp;zamierzeniu ma być
+                                    artystycznie kolorowa, z&nbsp;odniesieniami do różnych przestrzeni artystycznych i&nbsp;duchowych.
+                                    Technicznie melodyjna i&nbsp;jednocześnie ambitna, o&nbsp;ciekawej strukturze. To wszystko wskazuje na
+                                    możliwość łączenia jej z&nbsp;innymi działaniami artystycznymi dla jeszcze ciekawszego efektu.
                                 </p>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
 
