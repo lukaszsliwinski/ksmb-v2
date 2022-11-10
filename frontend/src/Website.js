@@ -9,6 +9,7 @@ import { ReactComponent as Youtube } from './svg/youtube.svg';
 import kubaBio from './photos/kubaBio.jpg';
 import lukaszBio from './photos/lukaszBio.jpg';
 import microbandBio from './photos/microbandBio.jpg';
+import concert from './photos/concert.jpg';
 
 import DarkModeSwitch from './DarkModeSwitch';
 import AudioPlayer from './AudioPlayer';
@@ -169,9 +170,42 @@ function Website() {
             <div className="flex items-center justify-center h-[66vh] m-auto bg-fixed bg-center bg-photo-3 bg-100%">
                 <div className="w-screen h-full bg-black/60"></div>
             </div>
-            <section className="w-full h-full min-h-screen bg-temp-light dark:bg-temp-dark" id="concerts">
-                <p className="text-temp-dark dark:text-temp-light">koncerty</p>
+
+
+            <section className="w-full h-full min-h-screen py-28 px-16 xl:px-28 bg-temp-light dark:bg-temp-dark" id="concerts">
+
+                <div className="container mx-auto 2xl:max-w-screen-xl text-center lg:text-left">
+                    <div className="grid lg:grid-cols-3 xl:grid-cols-7 items-center">
+                        <div className="xl:col-span-2 mx-auto -mb-6 w-11/12 md:w-3/4 lg:mb-0 lg:w-full">
+                            <img src={concert} className="w-full rounded-lg shadow-lg" alt="concert photo" />
+                        </div>
+
+                        <div className="lg:col-span-2 xl:col-span-5">
+                            <div className="block rounded-lg shadow-lg px-6 py-8 md:px-12 lg:-ml-14"
+                                style={{background: "hsla(0, 0%, 100%, 0.55)", backdropFilter: "blur(30px)"}}>
+                                {/* <h2 className="text-2xl font-bold mb-3">Microband</h2> */}
+                                <p className="text-justify text-gray-500 mb-0">
+                                Repertuar duetu tworzą kompozycje autorskie. Na przestrzeni każdego utworu łączą się
+                                motywy muzyczne inspirowane różnymi stylami. W&nbsp;repertuarze znajdują się utwory
+                                energiczne, sprawdzające się zarówno na początku jak i&nbsp;na końcu występu, inspirowane muzyką rockową, bałkańskimi rytmami czy hiszpańskim
+                                folklorem. Dopełnieniem są utwory spokojniejsze, gdzie folkowa żywiołowość łączy się z&nbsp;amerykańską psychodelią i&nbsp;bluesem. Koncert jest częściowo
+                                improwizowany dlatego każdy brzmi nieco inaczej. Oprócz koncertu autorskiego zespół oferuje połączenie wykonania muzyki na żywo z&nbsp;wernisażem malarstwa, grafiki,
+                                fotografii czy innych działań artystycznych. Muzyka KSMicroband w&nbsp;zamierzeniu ma być
+                                artystycznie kolorowa, z&nbsp;odniesieniami do różnych przestrzeni artystycznych i&nbsp;duchowych.
+                                Technicznie melodyjna i&nbsp;jednocześnie ambitna, o&nbsp;ciekawej strukturze. To wszystko wskazuje na
+                                możliwość łączenia jej z&nbsp;innymi działaniami artystycznymi dla jeszcze ciekawszego efektu.
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
             </section>
+
             <div className="flex items-center justify-center h-[66vh] m-auto bg-fixed bg-center bg-photo-4 bg-100%">
                 <div className="w-screen h-full bg-black/60"></div>
             </div>
