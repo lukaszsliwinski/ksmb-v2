@@ -147,7 +147,7 @@ function AudioPlayer() {
                             onClick={() => nextSong()}><Next className="w-4 m-auto"/></button>
                     </div>
 
-                    <ul className="mt-2 p-2 rounded-md">
+                    <ul className="mt-2 p-2">
                         {songs.map((song, id) => 
                             <li key={id} onClick={() => playByTitle(id)} id={`song${id}`}
                             className={`

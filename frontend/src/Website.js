@@ -167,7 +167,7 @@ function Website() {
                     </div>
                 </div>
                 <div className="flex justify-center w-1/2">
-                    <div className="block rounded-lg shadow-lg w-9/12 max-w-6xl bg-white">
+                <div className="w-9/12 max-w-6xl">
                         <VideoPlayer />
                     </div>
                 </div>
