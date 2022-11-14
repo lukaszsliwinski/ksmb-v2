@@ -1,6 +1,9 @@
 import { useState, useRef, useEffect } from 'react';
 
-
+import { ReactComponent as Play } from './svg/play.svg';
+import { ReactComponent as Pause } from './svg/pause.svg';
+import { ReactComponent as Next } from './svg/next.svg';
+import { ReactComponent as Prev } from './svg/prev.svg';
 
 function AudioPlayer() {
     // state
@@ -107,31 +110,52 @@ function AudioPlayer() {
             progress.current.value = 0;
             setSongId(0);
             setPlaying(false);
+            setCurrentTime(calculateTime(audio.current.currentTime))
         };
     };
 
     return (
-            <>
-                <ul>
+            <div className="p-10">
+                <div className="rounded-lg shadow-lg max-w-sm py-4 bg-white dark:bg-black text-black dark:text-white">
+                    <audio ref={audio} src={`${songs[0][1]}`} preload="metadata" 
+                        onEnded={() => handleEnd()}
+                        onLoadedMetadata={e => setDuration(calculateTime(e.target.duration))}
+                    ></audio>
+                    <div className="flex w-100 justify-between">
+                        <small className="px-3">{currentTime}</small>
+                        <input className="w-full cursor-pointer accent-black dark:accent-white" type="range" min="0" max="100" defaultValue="0" ref={progress} onInput={() => changeRangeValue()}/>
+                        <small className="px-3">{duration}</small>
+                    </div>
+                    <div className="flex justify-center items-center pt-2">
+                        <button
+                            type="button"
+                            data-mdb-ripple="true"
+                            data-mdb-ripple-color="light"
+                            className="inline-block text-black dark:text-white rounded-full transition duration-150 ease-in-out"
+                            onClick={() => previousSong()}><Prev className="w-4 m-auto"/></button>
+                        <button
+                            type="button"
+                            data-mdb-ripple="true"
+                            data-mdb-ripple-color="light"
+                            className="inline-block mx-6 w-12 h-12 text-white dark:text-black bg-black dark:bg-white rounded-full transition duration-150 ease-in-out"
+                            onClick={() => playPauseCurrent()}>{playing ? <Pause className="w-5 m-auto"/> : <Play className="w-5 m-auto"/>}</button>
+                        <button
+                            type="button"
+                            data-mdb-ripple="true"
+                            data-mdb-ripple-color="light"
+                            className="inline-block text-black dark:text-white rounded-full transition duration-150 ease-in-out"
+                            onClick={() => nextSong()}><Next className="w-4 m-auto"/></button>
+                    </div>
+                </div>
+                
+                <ul className="mt-6">
                     {songs.map((song, id) => 
                         <li key={id} onClick={() => playByTitle(id)} id={`song${id}`}
                         className={`cursor-pointer ${id === songId ? 'font-bold' : ''}`}
                         >{song[0]}</li>
                     )}
                 </ul>
-                <audio ref={audio} src={`${songs[0][1]}`} preload="metadata" 
-                    onEnded={() => handleEnd()}
-                    onLoadedMetadata={e => setDuration(calculateTime(e.target.duration))}
-                ></audio>
-
-                <div>
-                    <button onClick={() => previousSong()}>{'<prev>'}</button>
-                    <button onClick={() => playPauseCurrent()}>&nbsp;{`${playing ? '<pause>' : '<play>'}`}&nbsp;</button>
-                    <button onClick={() => nextSong()}>{'<next>'}</button>
-                </div>
-                <input className="w-full cursor-pointer" type="range" min="0" max="100" defaultValue="0" ref={progress} onInput={() => changeRangeValue()}/>
-                <div>{currentTime} / {duration}</div>
-            </>
+            </div>
     );
 };
 
