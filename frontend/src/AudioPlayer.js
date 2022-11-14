@@ -115,8 +115,8 @@ function AudioPlayer() {
     };
 
     return (
-            <div className="p-10">
-                <div className="rounded-lg shadow-lg max-w-sm py-4 bg-white dark:bg-black text-black dark:text-white">
+            <div className="mx-auto max-w-md">
+                <div className="rounded-lg shadow-lg mx-auto pt-4 bg-white dark:bg-black text-black dark:text-white">
                     <audio ref={audio} src={`${songs[0][1]}`} preload="metadata" 
                         onEnded={() => handleEnd()}
                         onLoadedMetadata={e => setDuration(calculateTime(e.target.duration))}
@@ -146,15 +146,33 @@ function AudioPlayer() {
                             className="inline-block text-black dark:text-white rounded-full transition duration-150 ease-in-out"
                             onClick={() => nextSong()}><Next className="w-4 m-auto"/></button>
                     </div>
+
+                    <ul className="mt-2 p-2 rounded-md">
+                        {songs.map((song, id) => 
+                            <li key={id} onClick={() => playByTitle(id)} id={`song${id}`}
+                            className={`
+                                flex
+                                justify-between
+                                items-center
+                                py-2
+                                px-4
+                                my-1
+                                rounded
+                                hover:bg-gray-500
+                                cursor-pointer
+                                ${id === songId ? 'font-bold' : ''}
+                            `}
+                            >
+                                <span>{song[0]}</span>
+                                <span>
+                                    {id === songId && playing ? <Pause className="w-2" /> : <Play className="w-2" />}
+                                </span>    
+                            </li>
+                        )}
+                    </ul>
                 </div>
                 
-                <ul className="mt-6">
-                    {songs.map((song, id) => 
-                        <li key={id} onClick={() => playByTitle(id)} id={`song${id}`}
-                        className={`cursor-pointer ${id === songId ? 'font-bold' : ''}`}
-                        >{song[0]}</li>
-                    )}
-                </ul>
+
             </div>
     );
 };

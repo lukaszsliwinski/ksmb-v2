@@ -162,7 +162,7 @@ function Website() {
 
             <section className="flex w-full h-full min-h-screen p-28 bg-temp-light dark:bg-temp-dark" id="music">
                 <div className="flex justify-center w-1/2">
-                    <div className="block rounded-lg shadow-lg w-9/12 max-w-6xl bg-white">
+                    <div className="w-9/12 max-w-6xl">
                         <AudioPlayer />
                     </div>
                 </div>
