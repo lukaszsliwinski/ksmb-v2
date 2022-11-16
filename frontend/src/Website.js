@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import 'tw-elements';
 
 import { ReactComponent as Logo } from './svg/logo.svg';
+import { ReactComponent as Events } from './svg/events.svg';
 import { ReactComponent as Mail } from './svg/mail.svg';
 import { ReactComponent as Facebook } from './svg/facebook.svg';
 import { ReactComponent as Youtube } from './svg/youtube.svg';
@@ -42,7 +43,7 @@ function Website() {
     return (
         <div className="all-inside:transition-colors all-inside:ease-in-out all-inside:duration-200" id="main">
  
-            <nav className={`fixed z-10 flex w-full h-16 px-5 ${windowTop ? 'bg-transparent' : 'bg-temp-dark/80 backdrop-blur-md'} ease-in-out duration-300`}>
+            <nav className={`fixed z-20 flex w-full h-16 px-5 ${windowTop ? 'bg-transparent' : 'bg-temp-dark/80 backdrop-blur-md'} ease-in-out duration-300`}>
                 <div className="basis-1/3 flex items-center text-[1.8rem] text-temp-light">
                     <a className="nav-link text-temp-light" href="#main">KSMicroband</a>
                 </div>
@@ -183,32 +184,38 @@ function Website() {
 
             <section className="w-full h-full min-h-screen py-28 px-16 xl:px-28 bg-temp-light dark:bg-temp-dark" id="concerts">
 
-                <div className="container mx-auto 2xl:max-w-screen-xl text-center lg:text-left">
-                    <div className="grid lg:grid-cols-3 xl:grid-cols-7 items-center">
-                        <div className="xl:col-span-2 mx-auto -mb-6 w-11/12 md:w-3/4 lg:mb-0 lg:w-full">
-                            <img src={concert} className="w-full rounded-lg shadow-lg" alt="concert photo" />
+                <div className="flex flex-wrap">
+                    <div className="grow-0 shrink-0 basis-auto w-full lg:w-5/12 mb-12 lg:mb-0">
+                        <div className="flex lg:py-12">
+                        <img src={concert} className="z-10 w-full md:ml-12 rounded-lg shadow-lg"
+                            id="cta-img-nml-50" alt="concert photo" />
                         </div>
-
-                        <div className="lg:col-span-2 xl:col-span-5">
-                            <div className="block rounded-lg shadow-lg p-6 md:px-12 lg:-translate-x-14"
-                                style={{background: "hsla(0, 0%, 100%, 0.55)", backdropFilter: "blur(30px)"}}>
-                                <p className="text-[.9rem] text-justify text-gray-500 mb-0">
-                                    Repertuar duetu tworzą kompozycje autorskie. Na przestrzeni każdego utworu łączą się
-                                    motywy muzyczne inspirowane różnymi stylami. W&nbsp;repertuarze znajdują się utwory
-                                    energiczne, sprawdzające się zarówno na początku jak i&nbsp;na końcu występu, inspirowane muzyką rockową, bałkańskimi rytmami czy hiszpańskim
-                                    folklorem. Dopełnieniem są utwory spokojniejsze, gdzie folkowa żywiołowość łączy się z&nbsp;amerykańską psychodelią i&nbsp;bluesem. Koncert jest częściowo
-                                    improwizowany dlatego każdy brzmi nieco inaczej. Oprócz koncertu autorskiego zespół oferuje połączenie wykonania muzyki na żywo z&nbsp;wernisażem malarstwa, grafiki,
-                                    fotografii czy innych działań artystycznych. Muzyka KSMicroband w&nbsp;zamierzeniu ma być
-                                    artystycznie kolorowa, z&nbsp;odniesieniami do różnych przestrzeni artystycznych i&nbsp;duchowych.
-                                    Technicznie melodyjna i&nbsp;jednocześnie ambitna, o&nbsp;ciekawej strukturze. To wszystko wskazuje na
-                                    możliwość łączenia jej z&nbsp;innymi działaniami artystycznymi dla jeszcze ciekawszego efektu.
+                    </div>
+                    <div className="grow-0 shrink-0 basis-auto w-full lg:w-7/12">
+                        <div className="bg-white h-full rounded-lg p-6 lg:pl-12 flex items-center text-center lg:text-left">
+                            <div className="lg:pl-12">
+                                <h2 className="text-3xl font-bold mb-6">Microband na żywo</h2>
+                                <p className="mb-6 pb-2 lg:pb-0 text-[.9rem] text-justify text-gray-500">
+                                Repertuar duetu tworzą kompozycje autorskie. Na przestrzeni każdego utworu łączą się
+                                motywy muzyczne inspirowane różnymi stylami. W&nbsp;repertuarze znajdują się utwory
+                                energiczne, sprawdzające się zarówno na początku jak i&nbsp;na końcu występu, inspirowane muzyką rockową, bałkańskimi rytmami czy hiszpańskim
+                                folklorem. Dopełnieniem są utwory spokojniejsze, gdzie folkowa żywiołowość łączy się z&nbsp;amerykańską psychodelią i&nbsp;bluesem. Koncert jest częściowo
+                                improwizowany dlatego każdy brzmi nieco inaczej. Oprócz koncertu autorskiego zespół oferuje połączenie wykonania muzyki na żywo z&nbsp;wernisażem malarstwa, grafiki,
+                                fotografii czy innych działań artystycznych. Muzyka KSMicroband w&nbsp;zamierzeniu ma być
+                                artystycznie kolorowa, z&nbsp;odniesieniami do różnych przestrzeni artystycznych i&nbsp;duchowych.
+                                Technicznie melodyjna i&nbsp;jednocześnie ambitna, o&nbsp;ciekawej strukturze. To wszystko wskazuje na
+                                możliwość łączenia jej z&nbsp;innymi działaniami artystycznymi dla jeszcze ciekawszego efektu.
                                 </p>
+                                <div className="flex justify-center">
+                                    <button type="button" className="flex items-end px-6 py-2 my-1 border-2 border-gray-800 text-gray-800 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                                        najbliższe koncerty <Events className="inline-block ml-1 w-4 h-4" />
+                                    </button>
+
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
 
             </section>
 
