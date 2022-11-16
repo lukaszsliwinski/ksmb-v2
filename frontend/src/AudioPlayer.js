@@ -133,19 +133,19 @@ function AudioPlayer() {
                             data-mdb-ripple="true"
                             data-mdb-ripple-color="light"
                             className="inline-block text-black dark:text-white rounded-full transition duration-150 ease-in-out"
-                            onClick={() => previousSong()}><Prev className="w-4 m-auto"/></button>
+                            onClick={() => previousSong()}><Prev className="w-7 h-7"/></button>
                         <button
                             type="button"
                             data-mdb-ripple="true"
                             data-mdb-ripple-color="light"
                             className="inline-block mx-6 w-12 h-12 text-white dark:text-black bg-black dark:bg-white rounded-full transition duration-150 ease-in-out"
-                            onClick={() => playPauseCurrent()}>{playing ? <Pause className="w-5 m-auto"/> : <Play className="w-5 m-auto"/>}</button>
+                            onClick={() => playPauseCurrent()}>{playing ? <Pause className="w-7 h-7 m-auto"/> : <Play className="w-7 h-7 m-auto"/>}</button>
                         <button
                             type="button"
                             data-mdb-ripple="true"
                             data-mdb-ripple-color="light"
                             className="inline-block text-black dark:text-white rounded-full transition duration-150 ease-in-out"
-                            onClick={() => nextSong()}><Next className="w-4 m-auto"/></button>
+                            onClick={() => nextSong()}><Next className="w-7 h-7"/></button>
                     </div>
 
                     <ul className="mt-2 p-2">
@@ -166,7 +166,7 @@ function AudioPlayer() {
                             >
                                 <span>{song[0]}</span>
                                 <span>
-                                    {id === songId && playing ? <Vinyl className="w-5" /> : <Play className="w-2 mr-1.5" />}
+                                    {id === songId && playing ? <Vinyl className="w-6 h-6" /> : <Play className="w-3 h-3 mr-1.5" />}
                                 </span>    
                             </li>
                         )}
