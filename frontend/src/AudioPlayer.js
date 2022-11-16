@@ -4,6 +4,7 @@ import { ReactComponent as Play } from './svg/play.svg';
 import { ReactComponent as Pause } from './svg/pause.svg';
 import { ReactComponent as Next } from './svg/next.svg';
 import { ReactComponent as Prev } from './svg/prev.svg';
+import { ReactComponent as Vinyl } from './svg/vinyl.svg';
 
 function AudioPlayer() {
     // state
@@ -165,7 +166,7 @@ function AudioPlayer() {
                             >
                                 <span>{song[0]}</span>
                                 <span>
-                                    {id === songId && playing ? <Pause className="w-2" /> : <Play className="w-2" />}
+                                    {id === songId && playing ? <Vinyl className="w-5" /> : <Play className="w-2 mr-1.5" />}
                                 </span>    
                             </li>
                         )}
