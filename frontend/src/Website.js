@@ -71,7 +71,7 @@ function Website() {
 
             </nav>
             <div className="top-0 bg-fixed bg-center bg-photo-1 bg-100%">
-                <div className="w-screen h-screen bg-black/60 backdrop-blur-sm p-20">
+                <div className="w-full h-screen bg-black/60 backdrop-blur-sm p-20">
                     <div className="flex items-center justify-center border-4 border-temp-light/70 h-full">
                         <Logo className="fill-temp-light/70 h-[25rem]" />
                     </div>
@@ -158,7 +158,7 @@ function Website() {
             </section>
 
             <div className="flex items-center justify-center h-[66vh] m-auto bg-fixed bg-center bg-photo-2 bg-100%">
-                <div className="w-screen h-full bg-black/60"></div>
+                <div className="w-full h-full bg-black/60"></div>
             </div>
 
             <section className="flex w-full h-full min-h-screen p-28 bg-temp-light dark:bg-temp-dark" id="music">
@@ -178,7 +178,7 @@ function Website() {
 
             </section>
             <div className="flex items-center justify-center h-[66vh] m-auto bg-fixed bg-center bg-photo-3 bg-100%">
-                <div className="w-screen h-full bg-black/60"></div>
+                <div className="w-full h-full bg-black/60"></div>
             </div>
 
 
@@ -220,7 +220,7 @@ function Website() {
             </section>
 
             <div className="flex items-center justify-center h-[66vh] m-auto bg-fixed bg-center bg-photo-4 bg-100%">
-                <div className="w-screen h-full bg-black/60"></div>
+                <div className="w-full h-full bg-black/60"></div>
             </div>
 
 
