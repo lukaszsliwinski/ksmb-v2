@@ -89,7 +89,7 @@ function Website() {
                             </div>
 
                             <div className="lg:col-span-2 xl:col-span-5 mb-14 lg:mb-0">
-                                <div className="block rounded-lg shadow-lg p-6 md:px-12 lg:-translate-x-6 bg-silver/20 backdrop-blur-xl text-outer-space dark:text-white">
+                                <div className="block xl:mt-32 mt-0 rounded-lg shadow-lg p-6 md:px-12 lg:-translate-x-6 bg-silver/20 backdrop-blur-xl text-outer-space dark:text-white">
                                     <h2 className="w-fit text-xl font-bold mb-2 border-b-2 border-b-supernova">Kuba Kołodziejczyk</h2>
                                     <p className="text-[.9rem] text-justify mb-0">
                                         Skrzypek zajmujący się muzyką klasyczną, rozrywkową oraz uczący rzemiosła. Gra od 7&nbsp;roku życia. 
@@ -110,7 +110,7 @@ function Website() {
                                 <img src={lukasz} className="w-full rounded-lg shadow-lg" alt="bio photo" />
                             </div>
                             <div className="lg:col-span-2 xl:col-span-5 mb-14 lg:mb-0">
-                                <div className="block rounded-lg shadow-lg p-6 md:px-12 lg:translate-x-6 bg-silver/20 backdrop-blur-xl dark:text-white">
+                                <div className="block xl:mt-32 mt-0 rounded-lg shadow-lg p-6 md:px-12 lg:translate-x-6 bg-silver/20 backdrop-blur-xl dark:text-white">
                                     <h2 className="w-fit text-xl font-bold mb-2 border-b-2 border-b-supernova">Łukasz Śliwiński</h2>
                                     <p className="text-[.9rem] text-justify mb-0">
                                         Gitarzysta samouk, rozpoczął swoją gitarową podróż w&nbsp;wieku 15&nbsp;lat. Doświadczenie sceniczne i&nbsp;studyjne 
@@ -135,7 +135,7 @@ function Website() {
                             </div>
 
                             <div className="lg:col-span-2 xl:col-span-5 mb-14 lg:mb-0">
-                                <div className="block rounded-lg shadow-lg p-6 md:px-12 lg:-translate-x-6 bg-silver/20 backdrop-blur-xl text-outer-space dark:text-white">
+                                <div className="block xl:mt-32 mt-0 rounded-lg shadow-lg p-6 md:px-12 lg:-translate-x-6 bg-silver/20 backdrop-blur-xl text-outer-space dark:text-white">
                                     <h2 className="w-fit text-xl font-bold mb-2 border-b-2 border-b-supernova">Microband</h2>
                                     <p className="text-[.9rem] text-justify ">
                                         Duet KSMicroband gra autorską muzykę, która łączy korzenie rockowych oraz klasycznych dźwięków. Z&nbsp;połączenia różnych, 
