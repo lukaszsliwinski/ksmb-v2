@@ -204,9 +204,9 @@ function Website() {
                                 możliwość łączenia jej z&nbsp;innymi działaniami artystycznymi dla jeszcze ciekawszego efektu.
                                 </p>
                                 <div className="flex justify-center">
-                                    <button type="button" className="flex items-end px-6 py-2 my-1 border-2 border-outer-space dark:border-white text-outer-space dark:text-white font-medium text-xs leading-tight uppercase rounded hover:border-supernova hover:text-supernova dark:hover:border-supernova dark:hover:text-supernova focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                                    <a href="https://www.facebook.com/KSMicroband/events" target="_blank" rel="noopener noreferrer" role="button" className="flex items-end px-6 py-2 my-1 border-2 border-outer-space dark:border-white text-outer-space dark:text-white font-medium text-xs leading-tight uppercase rounded hover:border-supernova hover:text-supernova dark:hover:border-supernova dark:hover:text-supernova focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
                                         najbliższe koncerty <Events className="inline-block ml-1 w-4 h-4" />
-                                    </button>
+                                    </a>
 
                                 </div>
                             </div>
