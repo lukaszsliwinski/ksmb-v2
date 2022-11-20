@@ -13,9 +13,9 @@ function VideoPlayer() {
 
     return (
         <div className="mx-auto max-w-2xl">
-            <div className="rounded-lg shadow-lg mx-auto bg-white dark:bg-black text-black dark:text-white">
+            <div className="rounded-lg shadow-lg mx-auto bg-silver/20 text-outer-space dark:text-white">
                 <div className="p-4">
-                    <div className="embed-responsive embed-responsive16by9 relative w-full pt-[56.25%] overflow-hidden">
+                    <div className="embed-responsive embed-responsive16by9 relative w-full rounded-lg pt-[56.25%] overflow-hidden">
                         <iframe
                             className="embed-responsive-item absolute top-0 right-0 bottom-0 left-0 w-full h-full"
                             src={`https://www.youtube.com/embed/${url}?enablejsapi=1&amp;origin=https%3A%2F%2Fksmicroband.pl`}
@@ -33,7 +33,8 @@ function VideoPlayer() {
                             px-4
                             my-1
                             rounded
-                            hover:bg-gray-500
+                            hover:bg-boulder
+                            hover:text-white
                             cursor-pointer
                             ${video[1] === url ? 'font-bold' : ''}`}
                         >{video[0]}</li>)}

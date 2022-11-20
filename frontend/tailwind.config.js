@@ -5,8 +5,14 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                'temp-light': '#f5f5f5',
-                'temp-dark': '#333333'
+                'black': '#010101',
+                'supernova': '#fdcc0a',
+                'silver': '#bcbcbc',
+                'boulder': '#797979',
+                'buttered-rum': '#a5860c',
+                'outer-space': '#384043',
+                'play-light': '#f2f2f2',
+                'play-dark': '#53595c'
             },
             backgroundImage: {
                 'photo-1': "url('../src/photos/background1.jpg')",

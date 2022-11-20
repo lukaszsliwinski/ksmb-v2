@@ -117,14 +117,14 @@ function AudioPlayer() {
 
     return (
             <div className="mx-auto max-w-md">
-                <div className="rounded-lg shadow-lg mx-auto pt-4 bg-white dark:bg-black text-black dark:text-white">
+                <div className="rounded-lg shadow-lg mx-auto pt-4 bg-silver/20 text-outer-space dark:text-white">
                     <audio ref={audio} src={`${songs[0][1]}`} preload="metadata" 
                         onEnded={() => handleEnd()}
                         onLoadedMetadata={e => setDuration(calculateTime(e.target.duration))}
                     ></audio>
                     <div className="flex w-100 justify-between">
                         <small className="px-3">{currentTime}</small>
-                        <input className="w-full cursor-pointer accent-black dark:accent-white" type="range" min="0" max="100" defaultValue="0" ref={progress} onInput={() => changeRangeValue()}/>
+                        <input className="w-full cursor-pointer accent-supernova" type="range" min="0" max="100" defaultValue="0" ref={progress} onInput={() => changeRangeValue()}/>
                         <small className="px-3">{duration}</small>
                     </div>
                     <div className="flex justify-center items-center pt-2">
@@ -132,19 +132,19 @@ function AudioPlayer() {
                             type="button"
                             data-mdb-ripple="true"
                             data-mdb-ripple-color="light"
-                            className="inline-block text-black dark:text-white rounded-full transition duration-150 ease-in-out"
+                            className="inline-block text-outer-space dark:text-white rounded-full transition duration-150 ease-in-out"
                             onClick={() => previousSong()}><Prev className="w-7 h-7"/></button>
                         <button
                             type="button"
                             data-mdb-ripple="true"
                             data-mdb-ripple-color="light"
-                            className="inline-block mx-6 w-12 h-12 text-white dark:text-black bg-black dark:bg-white rounded-full transition duration-150 ease-in-out"
+                            className="inline-block mx-6 w-12 h-12 text-play-light dark:text-play-dark bg-outer-space dark:bg-white rounded-full transition duration-150 ease-in-out"
                             onClick={() => playPauseCurrent()}>{playing ? <Pause className="w-7 h-7 m-auto"/> : <Play className="w-7 h-7 m-auto"/>}</button>
                         <button
                             type="button"
                             data-mdb-ripple="true"
                             data-mdb-ripple-color="light"
-                            className="inline-block text-black dark:text-white rounded-full transition duration-150 ease-in-out"
+                            className="inline-block text-outer-space dark:text-white rounded-full transition duration-150 ease-in-out"
                             onClick={() => nextSong()}><Next className="w-7 h-7"/></button>
                     </div>
 
@@ -159,7 +159,8 @@ function AudioPlayer() {
                                 px-4
                                 my-1
                                 rounded
-                                hover:bg-gray-500
+                                hover:bg-boulder
+                                hover:text-white
                                 cursor-pointer
                                 ${id === songId ? 'font-bold' : ''}
                             `}
