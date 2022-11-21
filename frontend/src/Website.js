@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Scrollspy from 'react-scrollspy';
 import 'tw-elements';
 
 import { ReactComponent as Logo } from './svg/logo.svg';
@@ -48,29 +49,30 @@ function Website() {
                     <a className="nav-link text-white" href="#main">KSMicroband</a>
                 </div>
                 <div className="basis-1/3 flex justify-center items-center h-full">
-                    <ul className="flex flex-row space-x-6 list-style-none">
-                        <li className="text-[1.8rem]">
-                            <a className="nav-link text-white" href="#about">o nas</a>
-                        </li>
-                        <li className="text-[1.8rem]">
-                            <a className="nav-link text-white" href="#music">muzyka</a>
-                        </li>
-                        <li className="text-[1.8rem]">
-                            <a className="nav-link text-white" href="#concerts">koncerty</a>
-                        </li>
-                        <li className="text-[1.8rem]">
-                            <a className="nav-link text-white" href="#footer">kontakt</a>
-                        </li>
-                    </ul>
+                    <Scrollspy
+                        className="flex space-x-6"
+                        items={ ['landing', 'about', 'music', 'concerts', 'footer'] }
+                        currentClassName="text-supernova"
+                        offset={ -300 } // dobrać połowę wysokości strony
+                    >
+                        {[
+                            ['', '#landing'],
+                            ['o nas', '#about'],
+                            ['muzyka', '#music'],
+                            ['koncerty', '#concerts'],
+                            ['kontakt', '#footer']
+                        ].map(([title, href]) =>
+                            <li className="first-of-type:hidden text-white hover:text-silver text-[1.8rem]">
+                                <a href={href}>{title}</a>
+                            </li>)}
+                    </Scrollspy>
                 </div>
-
-
                 <div className="basis-1/3 flex justify-end items-center h-full">
                     <DarkModeSwitch darkMode={darkMode} setDarkMode={setDarkMode} windowTop={windowTop}/>
                 </div>
 
             </nav>
-            <div className="top-0 bg-fixed bg-center bg-photo-1 bg-100%">
+            <div className="top-0 bg-fixed bg-center bg-photo-1 bg-100%" id="landing">
                 <div className="w-full h-screen bg-black/60 backdrop-blur-sm p-20">
                     <div className="flex items-center justify-center border-2 border-supernova/60 h-full">
                         <Logo className="fill-silver/50 h-[25rem]" />
