@@ -22,10 +22,11 @@ function Website() {
     const [darkMode, setDarkMode] = useState(false);
     const [windowTop, setWindowTop] = useState(true);
 
+    // ref to html element
     const html = document.documentElement;
     
     useEffect(() => {
-        html.classList.add('scroll-smooth');
+        html.classList.add('scroll-smooth', 'scrollbar-thin', 'scrollbar-thumb-buttered-rum');
     }, []);
 
     useEffect(() => {

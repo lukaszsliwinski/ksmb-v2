@@ -27,6 +27,7 @@ module.exports = {
     },
     plugins: [
         require('tw-elements/dist/plugin'),
+        require('tailwind-scrollbar')({ nocompatible: true }),
         function ({ addVariant }) {
             addVariant('all-inside', '& *:not(nav)');
         }
