@@ -10,9 +10,9 @@ module.exports = {
                 'silver': '#bcbcbc',
                 'boulder': '#797979',
                 'buttered-rum': '#a5860c',
-                'outer-space': '#384043',
+                'outer-space': '#1e2328',
                 'play-light': '#f2f2f2',
-                'play-dark': '#53595c'
+                'play-dark': '#3e4246'
             },
             backgroundImage: {
                 'photo-1': "url('../src/photos/background1.jpg')",
