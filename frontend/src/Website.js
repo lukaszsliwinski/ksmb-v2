@@ -43,7 +43,7 @@ function Website() {
 
 
     return (
-        <div className="all-inside:transition-colors all-inside:ease-in-out all-inside:duration-200" id="main">
+        <div className="all-inside:transition-colors all-inside:ease-in-out all-inside:duration-200 select-none" id="main">
  
             <nav className={`fixed z-20 flex w-full h-16 px-5 ${windowTop ? 'bg-transparent' : 'bg-outer-space/80 backdrop-blur-md'} ease-in-out duration-300`}>
                 <div className="basis-1/3 flex items-center text-[1.8rem]">
@@ -92,7 +92,7 @@ function Website() {
                             </div>
 
                             <div className="lg:col-span-2 xl:col-span-5 mb-14 lg:mb-0">
-                                <div className="block xl:mt-32 mt-0 rounded-lg shadow-lg p-6 md:px-12 lg:-translate-x-6 bg-silver/20 backdrop-blur-xl text-outer-space dark:text-white">
+                                <div className="block xl:mt-32 mt-0 rounded-lg shadow-lg p-6 md:px-12 lg:-translate-x-6 bg-silver/20 backdrop-blur-xl text-outer-space dark:text-white select-text">
                                     <h2 className="w-fit text-xl font-bold mb-2 border-b-2 border-b-supernova">Kuba Kołodziejczyk</h2>
                                     <p className="text-[.9rem] text-justify mb-0">
                                         Skrzypek zajmujący się muzyką klasyczną, rozrywkową oraz uczący rzemiosła. Gra od 7&nbsp;roku życia. 
@@ -113,7 +113,7 @@ function Website() {
                                 <img src={lukasz} className="w-full rounded-lg shadow-lg" alt="bio photo" />
                             </div>
                             <div className="lg:col-span-2 xl:col-span-5 mb-14 lg:mb-0">
-                                <div className="block xl:mt-32 mt-0 rounded-lg shadow-lg p-6 md:px-12 lg:translate-x-6 bg-silver/20 backdrop-blur-xl dark:text-white">
+                                <div className="block xl:mt-32 mt-0 rounded-lg shadow-lg p-6 md:px-12 lg:translate-x-6 bg-silver/20 backdrop-blur-xl dark:text-white select-text">
                                     <h2 className="w-fit text-xl font-bold mb-2 border-b-2 border-b-supernova">Łukasz Śliwiński</h2>
                                     <p className="text-[.9rem] text-justify mb-0">
                                         Gitarzysta samouk, rozpoczął swoją gitarową podróż w&nbsp;wieku 15&nbsp;lat. Doświadczenie sceniczne i&nbsp;studyjne 
@@ -138,7 +138,7 @@ function Website() {
                             </div>
 
                             <div className="lg:col-span-2 xl:col-span-5 mb-14 lg:mb-0">
-                                <div className="block xl:mt-32 mt-0 rounded-lg shadow-lg p-6 md:px-12 lg:-translate-x-6 bg-silver/20 backdrop-blur-xl text-outer-space dark:text-white">
+                                <div className="block xl:mt-32 mt-0 rounded-lg shadow-lg p-6 md:px-12 lg:-translate-x-6 bg-silver/20 backdrop-blur-xl text-outer-space dark:text-white select-text">
                                     <h2 className="w-fit text-xl font-bold mb-2 border-b-2 border-b-supernova">Microband</h2>
                                     <p className="text-[.9rem] text-justify ">
                                         Duet KSMicroband gra autorską muzykę, która łączy korzenie rockowych oraz klasycznych dźwięków. Z&nbsp;połączenia różnych, 
@@ -194,17 +194,17 @@ function Website() {
                     <div className="grow-0 shrink-0 basis-auto w-full lg:w-7/12">
                         <div className="bg-silver/20 text-outer-space dark:text-white h-full rounded-lg shadow-lg p-6 lg:pl-12 flex items-center text-center lg:text-left">
                             <div className="lg:pl-12">
-                                <h2 className="w-fit text-3xl font-bold mb-6 border-b-2 border-b-supernova">Microband na żywo</h2>
-                                <p className="mb-6 pb-2 lg:pb-0 text-[.9rem] text-justify">
-                                Repertuar duetu tworzą kompozycje autorskie. Na przestrzeni każdego utworu łączą się
-                                motywy muzyczne inspirowane różnymi stylami. W&nbsp;repertuarze znajdują się utwory
-                                energiczne, sprawdzające się zarówno na początku jak i&nbsp;na końcu występu, inspirowane muzyką rockową, bałkańskimi rytmami czy hiszpańskim
-                                folklorem. Dopełnieniem są utwory spokojniejsze, gdzie folkowa żywiołowość łączy się z&nbsp;amerykańską psychodelią i&nbsp;bluesem. Koncert jest częściowo
-                                improwizowany dlatego każdy brzmi nieco inaczej. Oprócz koncertu autorskiego zespół oferuje połączenie wykonania muzyki na żywo z&nbsp;wernisażem malarstwa, grafiki,
-                                fotografii czy innych działań artystycznych. Muzyka KSMicroband w&nbsp;zamierzeniu ma być
-                                artystycznie kolorowa, z&nbsp;odniesieniami do różnych przestrzeni artystycznych i&nbsp;duchowych.
-                                Technicznie melodyjna i&nbsp;jednocześnie ambitna, o&nbsp;ciekawej strukturze. To wszystko wskazuje na
-                                możliwość łączenia jej z&nbsp;innymi działaniami artystycznymi dla jeszcze ciekawszego efektu.
+                                <h2 className="w-fit text-3xl font-bold mb-6 border-b-2 border-b-supernova select-text">Microband na żywo</h2>
+                                <p className="mb-6 pb-2 lg:pb-0 text-[.9rem] text-justify select-text">
+                                    Repertuar duetu tworzą kompozycje autorskie. Na przestrzeni każdego utworu łączą się
+                                    motywy muzyczne inspirowane różnymi stylami. W&nbsp;repertuarze znajdują się utwory
+                                    energiczne, sprawdzające się zarówno na początku jak i&nbsp;na końcu występu, inspirowane muzyką rockową, bałkańskimi rytmami czy hiszpańskim
+                                    folklorem. Dopełnieniem są utwory spokojniejsze, gdzie folkowa żywiołowość łączy się z&nbsp;amerykańską psychodelią i&nbsp;bluesem. Koncert jest częściowo
+                                    improwizowany dlatego każdy brzmi nieco inaczej. Oprócz koncertu autorskiego zespół oferuje połączenie wykonania muzyki na żywo z&nbsp;wernisażem malarstwa, grafiki,
+                                    fotografii czy innych działań artystycznych. Muzyka KSMicroband w&nbsp;zamierzeniu ma być
+                                    artystycznie kolorowa, z&nbsp;odniesieniami do różnych przestrzeni artystycznych i&nbsp;duchowych.
+                                    Technicznie melodyjna i&nbsp;jednocześnie ambitna, o&nbsp;ciekawej strukturze. To wszystko wskazuje na
+                                    możliwość łączenia jej z&nbsp;innymi działaniami artystycznymi dla jeszcze ciekawszego efektu.
                                 </p>
                                 <div className="flex justify-center">
                                     <a href="https://www.facebook.com/KSMicroband/events" target="_blank" rel="noopener noreferrer" role="button" className="flex items-end px-6 py-2 my-1 border-2 border-outer-space dark:border-white text-outer-space dark:text-white font-medium text-xs leading-tight uppercase rounded hover:border-supernova hover:text-supernova dark:hover:border-supernova dark:hover:text-supernova focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
@@ -235,7 +235,7 @@ function Website() {
 
                             <div className="ml-6">
                                 <p className="font-bold mb-1">kontakt w sprawie koncertów</p>
-                                <p className="text-outer-space/60 dark:text-white/60">ksmicroband@gmail.com</p>
+                                <p className="text-outer-space/60 dark:text-white/60 select-text">ksmicroband@gmail.com</p>
                             </div>
                         </div>
                     </div>
