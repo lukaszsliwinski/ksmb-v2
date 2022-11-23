@@ -43,7 +43,7 @@ function Website() {
 
 
     return (
-        <div className="all-inside:transition-colors all-inside:ease-in-out all-inside:duration-200 select-none" id="main">
+        <div className="select-none" id="main">
  
             <nav className={`fixed z-20 flex w-full h-16 px-5 ${windowTop ? 'bg-transparent' : 'bg-outer-space/80 backdrop-blur-md'} ease-in-out duration-300`}>
                 <div className="basis-1/3 flex items-center text-[1.8rem]">
