@@ -13,6 +13,7 @@ import lukasz from './photos/lukasz.jpg';
 import microband from './photos/microband.jpg';
 import concert from './photos/concert.jpg';
 
+import useWindowSize from './hooks/useWindowSize';
 import DarkModeSwitch from './DarkModeSwitch';
 import AudioPlayer from './AudioPlayer';
 import VideoPlayer from './VideoPlayer';
@@ -54,7 +55,7 @@ function Website() {
                         className="flex space-x-6"
                         items={ ['landing', 'about', 'music', 'concerts', 'footer'] }
                         currentClassName="text-supernova"
-                        offset={ -300 } // dobrać połowę wysokości strony
+                        offset={ -100 }
                     >
                         {[
                             ['', '#landing'],
