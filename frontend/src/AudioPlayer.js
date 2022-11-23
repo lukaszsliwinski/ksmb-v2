@@ -139,7 +139,7 @@ function AudioPlayer() {
                             data-mdb-ripple="true"
                             data-mdb-ripple-color="light"
                             className="inline-block mx-6 w-12 h-12 text-play-light dark:text-play-dark bg-outer-space dark:bg-white rounded-full transition duration-150 ease-in-out"
-                            onClick={() => playPauseCurrent()}>{playing ? <Pause className="w-7 h-7 m-auto"/> : <Play className="w-7 h-7 m-auto"/>}</button>
+                            onClick={() => playPauseCurrent()}>{playing ? <Pause className="w-7 h-7 m-auto"/> : <Play className="w-7 h-7 ml-3"/>}</button>
                         <button
                             type="button"
                             data-mdb-ripple="true"
