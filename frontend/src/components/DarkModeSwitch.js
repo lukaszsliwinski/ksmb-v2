@@ -7,7 +7,7 @@ function DarkModeSwitch({ darkMode, setDarkMode, windowTop }) {
       <div
         className={`
           relative h-8 w-[3.75rem] cursor-pointer rounded-[16px] border border-white bg-transparent p-1 dark:border-0 dark:bg-white
-          before:block before:h-[1.375rem] before:w-[1.375rem] before:rounded-[12px] before:bg-white before:content-[''] before:absolute before:z-[2] before:translate-x-0 before:transition-transform before:duration-100 before:ease-linear 
+          before:block before:h-[1.375rem] before:w-[1.375rem] before:rounded-[12px] before:bg-white before:content-[''] before:absolute before:z-[2] before:translate-x-0 before:transition-transform before:duration-100 before:ease-linear
           dark:before:h-6 dark:before:w-6
           ${windowTop ? 'before:dark:bg-black' : 'before:dark:bg-outer-space'} ${darkMode ? 'before:translate-x-7' : ''}
         `}

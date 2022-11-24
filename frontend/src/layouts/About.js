@@ -1,8 +1,8 @@
-      
+
 import kuba from '../assets/photos/kuba.jpg';
 import lukasz from '../assets/photos/lukasz.jpg';
 import microband from '../assets/photos/microband.jpg';
-     
+
 function About() {
   return (
     <section className="h-full min-h-screen w-full bg-white p-28 dark:bg-outer-space" id="about">
@@ -90,6 +90,5 @@ function About() {
     </section>
   );
 }
-      
+
 export default About;
-      
