@@ -5,16 +5,16 @@ function Navbar({ darkMode, setDarkMode, windowTop }) {
   return (
     <nav
       className={`
-        fixed z-20 flex h-16 w-full px-5 duration-300 ease-in-out
+        fixed z-20 flex h-16 w-full justify-between px-5 duration-300 ease-in-out
         ${windowTop ? 'bg-transparent' : 'bg-outer-space/80 backdrop-blur-md'}
       `}
-      >
-      <div className="flex basis-1/3 items-center text-[1.8rem]">
+    >
+      <div className="hidden basis-1/6 items-center text-3xl md:flex">
         <a className="nav-link text-white" href="#main">
           KSMicroband
         </a>
       </div>
-      <div className="flex h-full basis-1/3 items-center justify-center">
+      <div className="flex h-full items-center md:basis-2/3 md:justify-center">
         <Scrollspy
           className="flex space-x-6"
           items={['landing', 'about', 'music', 'concerts', 'footer']}
@@ -28,13 +28,13 @@ function Navbar({ darkMode, setDarkMode, windowTop }) {
             ['koncerty', '#concerts'],
             ['kontakt', '#footer']
           ].map(([title, href]) => (
-            <li className="text-[1.8rem] text-white first-of-type:hidden hover:text-silver">
+            <li className="text-2xl text-white first-of-type:hidden hover:text-silver">
               <a href={href}>{title}</a>
             </li>
           ))}
         </Scrollspy>
       </div>
-      <div className="flex h-full basis-1/3 items-center justify-end">
+      <div className="flex h-full items-center justify-end md:basis-1/6">
         <DarkModeSwitch darkMode={darkMode} setDarkMode={setDarkMode} windowTop={windowTop} />
       </div>
     </nav>
