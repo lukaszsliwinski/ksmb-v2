@@ -3,21 +3,12 @@
 @tailwind utilities;
 
 @layer utilities {
-    .slopedframe { /* inna nazwa klasy */
-        clip-path: polygon(
-            0 0,
-            calc(100% - 1rem) 0,
-            100% 100%,
-            0 100%
-        );
-    }
+  .slopedframe {
+    /* inna nazwa klasy */
+    clip-path: polygon(0 0, calc(100% - 1rem) 0, 100% 100%, 0 100%);
+  }
 
-    .slopedframe2 {
-        clip-path: polygon(
-            1rem 0,
-            100% 0,
-            100% 100%,
-            0 100%
-        );
-    }
+  .slopedframe2 {
+    clip-path: polygon(1rem 0, 100% 0, 100% 100%, 0 100%);
+  }
 }
