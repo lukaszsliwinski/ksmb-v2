@@ -1,10 +1,10 @@
 import { useState, useRef, useEffect } from 'react';
 
-import { ReactComponent as Play } from './svg/play.svg';
-import { ReactComponent as Pause } from './svg/pause.svg';
-import { ReactComponent as Next } from './svg/next.svg';
-import { ReactComponent as Prev } from './svg/prev.svg';
-import { ReactComponent as Vinyl } from './svg/vinyl.svg';
+import { ReactComponent as Play } from '../assets/svg/play.svg';
+import { ReactComponent as Pause } from '../assets/svg/pause.svg';
+import { ReactComponent as Next } from '../assets/svg/next.svg';
+import { ReactComponent as Prev } from '../assets/svg/prev.svg';
+import { ReactComponent as Vinyl } from '../assets/svg/vinyl.svg';
 
 function AudioPlayer() {
   // state

@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react';
 import Scrollspy from 'react-scrollspy';
 import 'tw-elements';
-import './Website.css';
+import './assets/global.css';
 
 // import svg
-import { ReactComponent as Logo } from './svg/logo.svg';
-import { ReactComponent as Events } from './svg/events.svg';
-import { ReactComponent as Mail } from './svg/mail.svg';
-import { ReactComponent as Facebook } from './svg/facebook.svg';
-import { ReactComponent as Youtube } from './svg/youtube.svg';
+import { ReactComponent as Logo } from './assets/svg/logo.svg';
+import { ReactComponent as Events } from './assets/svg/events.svg';
+import { ReactComponent as Mail } from './assets/svg/mail.svg';
+import { ReactComponent as Facebook } from './assets/svg/facebook.svg';
+import { ReactComponent as Youtube } from './assets/svg/youtube.svg';
 
 // import photos
 import kuba from './photos/kuba.jpg';
@@ -17,9 +17,9 @@ import microband from './photos/microband.jpg';
 import concert from './photos/concert.jpg';
 
 // import components
-import DarkModeSwitch from './DarkModeSwitch';
-import AudioPlayer from './AudioPlayer';
-import VideoPlayer from './VideoPlayer';
+import DarkModeSwitch from './components/DarkModeSwitch';
+import AudioPlayer from './components/AudioPlayer';
+import VideoPlayer from './components/VideoPlayer';
 
 function Website() {
   // state
@@ -47,9 +47,10 @@ function Website() {
   return (
     <div className="select-none" id="main">
       <nav
-        className={`fixed z-20 flex h-16 w-full px-5 ${
-          windowTop ? 'bg-transparent' : 'bg-outer-space/80 backdrop-blur-md'
-        } duration-300 ease-in-out`}
+        className={`
+          fixed z-20 flex h-16 w-full px-5 duration-300 ease-in-out
+          ${windowTop ? 'bg-transparent' : 'bg-outer-space/80 backdrop-blur-md'}
+        `}
       >
         <div className="flex basis-1/3 items-center text-[1.8rem]">
           <a className="nav-link text-white" href="#main">
@@ -238,7 +239,9 @@ function Website() {
                     target="_blank"
                     rel="noopener noreferrer"
                     role="button"
-                    className="my-1 flex items-end rounded border-2 border-outer-space px-6 py-2 text-xs font-medium uppercase leading-tight text-outer-space transition duration-150 ease-in-out focus:outline-none focus:ring-0 hover:border-supernova hover:text-supernova dark:border-white dark:text-white dark:hover:border-supernova dark:hover:text-supernova"
+                    className="
+                      my-1 flex items-end rounded border-2 border-outer-space px-6 py-2 text-xs font-medium uppercase leading-tight text-outer-space transition duration-150 ease-in-out
+                      focus:outline-none focus:ring-0 hover:border-supernova hover:text-supernova dark:border-white dark:text-white dark:hover:border-supernova dark:hover:text-supernova"
                   >
                     najbliższe koncerty <Events className="ml-1 inline-block h-4 w-4" />
                   </a>
