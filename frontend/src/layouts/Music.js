@@ -8,7 +8,7 @@ function Music() {
       id="music"
     >
       <div className="flex justify-center md:w-1/2">
-        <div className="w-11/12 max-w-6xl xl:w-9/12">
+        <div className="mb-12 w-11/12 max-w-6xl md:mb-0 xl:w-9/12">
           <AudioPlayer />
         </div>
       </div>
