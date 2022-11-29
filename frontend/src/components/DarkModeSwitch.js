@@ -6,12 +6,14 @@ function DarkModeSwitch({ darkMode, setDarkMode, windowTop }) {
     <div onClick={() => setDarkMode(!darkMode)}>
       <div
         className={`
-          relative h-8 w-[3.75rem] cursor-pointer rounded-[16px] border border-white bg-transparent p-1 dark:border-0 dark:bg-white
-          before:block before:h-[1.375rem] before:w-[1.375rem] before:rounded-[12px] before:bg-white before:content-[''] before:absolute before:z-[2] before:translate-x-0 before:transition-transform before:duration-100 before:ease-linear
-          dark:before:h-6 dark:before:w-6
-          ${windowTop ? 'before:dark:bg-black' : 'before:dark:bg-outer-space'} ${darkMode ? 'before:translate-x-7' : ''}
+          relative mx-2 h-6 w-[2.8rem] cursor-pointer rounded-[12px] border border-white bg-transparent p-0.5 sm:h-8 sm:w-[3.75rem] sm:rounded-[16px] sm:p-1
+          dark:border-0 dark:bg-white
+          before:absolute before:z-[2] before:block before:h-[1.1rem] before:w-[1.1rem] before:translate-x-0 before:rounded-[9px] before:bg-white before:transition-transform before:duration-100 before:ease-linear before:content-[''] before:sm:h-[1.375rem] before:sm:w-[1.375rem] before:sm:rounded-[12px]
+          before:dark:h-[1.2rem] before:dark:w-[1.2rem] before:dark:rounded-[10px] before:dark:sm:h-[1.5rem] before:dark:sm:w-[1.5rem] before:dark:sm:rounded-[12px]
+          ${windowTop ? 'before:dark:bg-black' : 'before:dark:bg-outer-space'}
+          ${darkMode ? 'before:translate-x-[1.375rem] before:sm:translate-x-7' : ''}
         `}
-        >
+      >
         <div className="flex h-full items-center justify-between">
           <SunIcon className={`${windowTop ? 'fill-black' : 'fill-outer-space'} z-0 h-6 w-6`} />
           <MoonIcon className="z-0 h-6 w-6 fill-white" />

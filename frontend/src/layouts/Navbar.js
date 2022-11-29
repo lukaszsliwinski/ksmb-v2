@@ -5,7 +5,7 @@ function Navbar({ darkMode, setDarkMode, windowTop }) {
   return (
     <nav
       className={`
-        fixed z-20 flex h-16 w-full justify-between px-5 duration-300 ease-in-out
+        fixed z-20 flex h-16 w-full justify-between px-2 sm:px-5 duration-300 ease-in-out
         ${windowTop ? 'bg-transparent' : 'bg-outer-space/80 backdrop-blur-md'}
       `}
     >
@@ -16,7 +16,7 @@ function Navbar({ darkMode, setDarkMode, windowTop }) {
       </div>
       <div className="flex h-full items-center md:basis-2/3 md:justify-center">
         <Scrollspy
-          className="flex space-x-6"
+          className="flex space-x-2 sm:space-x-6"
           items={['landing', 'about', 'music', 'concerts', 'footer']}
           currentClassName="text-supernova"
           offset={-100}
@@ -28,7 +28,7 @@ function Navbar({ darkMode, setDarkMode, windowTop }) {
             ['koncerty', '#concerts'],
             ['kontakt', '#footer']
           ].map(([title, href]) => (
-            <li className="text-2xl text-white first-of-type:hidden hover:text-silver">
+            <li className="text-md sm:text-xl md:text-2xl text-white first-of-type:hidden hover:text-silver">
               <a href={href}>{title}</a>
             </li>
           ))}
