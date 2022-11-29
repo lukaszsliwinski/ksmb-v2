@@ -6,18 +6,18 @@ import DownloadBtn from '../components/DownloadBtn';
 function Footer() {
   return (
     <section
-      className="flex h-[34vh] w-full flex-col justify-between bg-white pt-16 pb-4 text-outer-space dark:bg-outer-space dark:text-white"
+      className="flex lg:h-[34vh] w-full flex-col justify-between bg-white pt-16 pb-4 text-outer-space dark:bg-outer-space dark:text-white"
       id="footer"
     >
-      <div className="flex">
-        <div className="flex w-full justify-center lg:w-1/3">
+      <div className="flex flex-col md:flex-row">
+        <div className="flex w-full justify-center lg:w-1/3 mb-16 md:mb-0">
           <div className="flex items-start">
-            <div className="flex h-14 w-14 items-center justify-center rounded-md bg-supernova p-4 shadow-md">
+            <div className="flex mx-3 h-14 w-14 items-center justify-center rounded-md bg-supernova p-4 shadow-md">
               <Mail className="w-6 text-white dark:text-outer-space" />
             </div>
 
-            <div className="ml-6">
-              <p className="mb-1 font-bold">kontakt w sprawie koncertów</p>
+            <div className="ml-3">
+              <p className="mb-1 font-bold">adres kontakowy</p>
               <p className="select-text text-outer-space/60 dark:text-white/60">
                 ksmicroband@gmail.com
               </p>
@@ -25,7 +25,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="flex w-full flex-col items-center justify-start lg:w-1/3">
+        <div className="flex w-full flex-col items-center justify-start lg:w-1/3 mb-16 md:mb-0">
           <p className="mb-1 font-bold">dokumenty do pobrania</p>
           <div className="flex flex-col">
             <DownloadBtn label="oferta koncertowa" />
@@ -33,7 +33,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="flex w-full flex-col items-center justify-start lg:w-1/3">
+        <div className="flex w-full flex-col items-center justify-start lg:w-1/3 mb-16 md:mb-0">
           <p className="mb-1 font-bold">jesteśmy również na</p>
           <div className="flex items-start">
             <a
@@ -62,7 +62,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="flex w-full justify-center">
+      <div className="flex mt-12 w-full justify-center">
         <p>&copy; 2021-2022 KSMICROBAND</p>
       </div>
     </section>
