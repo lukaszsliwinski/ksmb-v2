@@ -1,3 +1,5 @@
+import { XyzTransition } from '@animxyz/react';
+
 import AudioPlayer from '../components/AudioPlayer';
 import VideoPlayer from '../components/VideoPlayer';
 
@@ -11,14 +13,24 @@ function Music({ verticalScreen }) {
       id="music"
     >
       <div className="flex justify-center md:w-1/2">
-        <div className="mb-12 w-11/12 max-w-6xl md:mb-0 xl:w-9/12">
-          <AudioPlayer />
-        </div>
+        <XyzTransition
+          xyz="fade left ease-in-out duration-6"
+          appearVisible={{ threshold: .5, rootMargin: '0px' }}
+        >
+          <div className="mb-12 w-11/12 max-w-6xl md:mb-0 xl:w-9/12">
+            <AudioPlayer />
+          </div>
+        </XyzTransition>
       </div>
       <div className="flex justify-center md:w-1/2">
-        <div className="w-11/12 max-w-6xl xl:w-9/12">
-          <VideoPlayer />
-        </div>
+        <XyzTransition
+          xyz="fade right ease-in-out duration-6"
+          appearVisible={{ threshold: .5, rootMargin: '0px' }}
+        >
+          <div className="w-11/12 max-w-6xl xl:w-9/12">
+            <VideoPlayer />
+          </div>
+        </XyzTransition>
       </div>
     </section>
   );

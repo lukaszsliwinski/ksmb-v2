@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import 'tw-elements';
+import '@animxyz/core';
 import './assets/global.css';
 
 import useWindowDimensions from './hooks/useWindowDimensions';
@@ -25,7 +26,6 @@ function Website() {
 
   useEffect(() => {
     html.classList.add('scroll-smooth', 'scrollbar-thin', 'scrollbar-thumb-buttered-rum');
-    console.log(screenHeight, screenWidth);
   }, []);
 
   useEffect(() => {
@@ -44,7 +44,7 @@ function Website() {
   }, [screenHeight, screenWidth]);
 
   return (
-    <div className="select-none" id="main">
+    <div className="select-none overflow-x-hidden" id="main">
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} windowTop={windowTop} />
       <Landing verticalScreen={verticalScreen} />
       <About />
