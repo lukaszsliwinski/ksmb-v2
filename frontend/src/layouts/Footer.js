@@ -28,8 +28,8 @@ function Footer() {
         <div className="flex w-full flex-col items-center justify-start lg:w-1/3 mb-16 md:mb-0">
           <p className="mb-1 font-bold">dokumenty do pobrania</p>
           <div className="flex flex-col">
-            <DownloadBtn label="oferta koncertowa" />
-            <DownloadBtn label="rider techniczny" />
+            <DownloadBtn label="oferta koncertowa" file="oferta" download="ksmicroband_oferta_koncertowa" />
+            <DownloadBtn label="rider techniczny" file="rider" download="ksmicroband_rider_techniczny" />
           </div>
         </div>
 

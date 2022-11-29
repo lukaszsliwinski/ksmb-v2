@@ -26,11 +26,16 @@ app.get('/api/mp3/:title', (req, res) => {
     res.sendFile(path.resolve(__dirname, './api/mp3', `${req.params.title}.mp3`));
 })
 
+// pdf API
+app.get('/api/pdf/:file', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './api/pdf', `${req.params.file}.pdf`));
+})
+
 // All other GET requests not handled before will return our React app
 app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, '../frontend/build', 'index.html'));
 });
-  
+
 
 app.listen(PORT, () => {
     console.log(`Server listening on ${PORT}`);
