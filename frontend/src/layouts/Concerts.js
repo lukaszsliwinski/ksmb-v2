@@ -1,18 +1,21 @@
 import { ReactComponent as Events } from '../assets/svg/events.svg';
 import concert from '../assets/photos/concert.jpg';
 
-function Concerts() {
+function Concerts({ verticalScreen }) {
   return (
     <section
-      className="h-full min-h-screen w-full bg-white py-28 px-6 dark:bg-outer-space md:px-16 xl:px-28"
+      className={`
+        h-full w-full bg-white py-28 px-6 dark:bg-outer-space md:px-16 xl:px-28
+        ${verticalScreen ? '' : 'min-h-screen'}
+      `}
       id="concerts"
     >
       <div className="flex flex-wrap">
-        <div className="-mb-4 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12">
+        <div className="-mb-2 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12">
           <div className="flex lg:py-12">
             <img
               src={concert}
-              className="z-10 mx-auto w-11/12 rounded-lg shadow-lg sm:w-3/4 lg:ml-12 lg:w-full"
+              className="z-10 mx-auto w-11/12 rounded-lg shadow-lg md:w-3/4 lg:ml-12 lg:w-full"
               id="cta-img-nml-50"
               alt="concert photo"
             />

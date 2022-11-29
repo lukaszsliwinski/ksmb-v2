@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import 'tw-elements';
 import './assets/global.css';
 
+import useWindowDimensions from './hooks/useWindowDimensions';
 import Navbar from './layouts/Navbar';
 import Landing from './layouts/Landing';
 import Background from './components/Background';
@@ -14,12 +15,17 @@ function Website() {
   // state
   const [darkMode, setDarkMode] = useState(false);
   const [windowTop, setWindowTop] = useState(true);
+  const [verticalScreen, setVerticalScreen] = useState(false);
+
+  // get screen size
+  const { screenHeight, screenWidth } = useWindowDimensions();
 
   // ref to html element
   const html = document.documentElement;
 
   useEffect(() => {
     html.classList.add('scroll-smooth', 'scrollbar-thin', 'scrollbar-thumb-buttered-rum');
+    console.log(screenHeight, screenWidth);
   }, []);
 
   useEffect(() => {
@@ -33,16 +39,20 @@ function Website() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [windowTop]);
 
+  useEffect(() => {
+    setVerticalScreen(screenHeight > screenWidth);
+  }, [screenHeight, screenWidth]);
+
   return (
     <div className="select-none" id="main">
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} windowTop={windowTop} />
-      <Landing />
+      <Landing verticalScreen={verticalScreen} />
       <About />
-      <Background bgPhoto="bg-photo-2" />
-      <Music />
-      <Background bgPhoto="bg-photo-3" />
-      <Concerts />
-      <Background bgPhoto="bg-photo-4" />
+      {!verticalScreen && <Background bgPhoto="bg-photo-3" />}
+      <Music verticalScreen={verticalScreen} />
+      {!verticalScreen && <Background bgPhoto="bg-photo-4" />}
+      <Concerts verticalScreen={verticalScreen} />
+      {!verticalScreen && <Background bgPhoto="bg-photo-5" />}
       <Footer />
     </div>
   );

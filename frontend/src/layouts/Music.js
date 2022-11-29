@@ -1,10 +1,13 @@
 import AudioPlayer from '../components/AudioPlayer';
 import VideoPlayer from '../components/VideoPlayer';
 
-function Music() {
+function Music({ verticalScreen }) {
   return (
     <section
-      className="flex h-full min-h-screen w-full flex-col bg-white py-28 px-6 dark:bg-outer-space md:flex-row xl:px-28"
+      className={`
+        flex h-full w-full flex-col bg-white py-28 px-6 dark:bg-outer-space md:flex-row xl:px-28
+        ${verticalScreen ? '' : 'min-h-screen'}
+      `}
       id="music"
     >
       <div className="flex justify-center md:w-1/2">

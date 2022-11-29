@@ -1,7 +1,7 @@
 function Background({ bgPhoto }) {
   return (
     <div className={`
-      m-auto flex h-[66vh] items-center justify-center bg-photo-2 bg-100% bg-fixed bg-center
+      m-auto flex h-[66vh] items-center justify-center bg-photo-2 bg-cover bg-fixed bg-center
       ${bgPhoto}
       `}
     >
