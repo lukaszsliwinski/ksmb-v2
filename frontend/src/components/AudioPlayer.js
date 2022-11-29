@@ -16,7 +16,6 @@ function AudioPlayer() {
   // ref
   const audio = useRef();
   const progress = useRef();
-  // const currentTime = useRef();
 
   const songs = [
     ['Dziki zwierz', 'api/mp3/zwierz'],
@@ -181,7 +180,7 @@ function AudioPlayer() {
             >
               <span>{song[0]}</span>
               <span>
-                {id === songId && playing ? <Vinyl className="h-6 w-6" /> : <Play className="mr-1.5 h-3 w-3" />}
+                {id === songId && playing ? <Vinyl className="h-6 w-6 rotating" /> : <Play className="mr-1.5 h-3 w-3" />}
               </span>
             </li>
           ))}
