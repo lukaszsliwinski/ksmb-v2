@@ -6,7 +6,7 @@ import DownloadBtn from '../components/DownloadBtn';
 function Footer() {
   return (
     <section
-      className="flex lg:h-[34vh] w-full flex-col justify-between bg-white pt-16 pb-4 text-outer-space transition-colors dark:bg-outer-space dark:text-white"
+      className="flex lg:h-1/3s w-full flex-col justify-between bg-white pt-16 pb-4 text-outer-space transition-colors dark:bg-outer-space dark:text-white"
       id="footer"
     >
       <div className="flex flex-col md:flex-row">
@@ -43,7 +43,7 @@ function Footer() {
               role="button"
               data-mdb-ripple="true"
               data-mdb-ripple-color="light"
-              className="mx-2 inline-block rounded bg-[#1877f2] px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md focus:shadow-lg focus:outline-none hover:shadow-lg"
+              className="mx-2 inline-block rounded bg-fb-btn px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md focus:shadow-lg focus:outline-none hover:shadow-lg"
             >
               <Facebook className="h-4 w-4" />
             </a>
@@ -54,7 +54,7 @@ function Footer() {
               role="button"
               data-mdb-ripple="true"
               data-mdb-ripple-color="light"
-              className="mx-2 inline-block rounded bg-[#ff0000] px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md focus:shadow-lg focus:outline-none hover:shadow-lg"
+              className="mx-2 inline-block rounded bg-yt-btn px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md focus:shadow-lg focus:outline-none hover:shadow-lg"
             >
               <Youtube className="h-4 w-4" />
             </a>

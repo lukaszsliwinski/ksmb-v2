@@ -4,6 +4,14 @@ module.exports = {
   content: ['./src/**/*.{html,js}', './node_modules/tw-elements/dist/js/**/*.js'],
   theme: {
     extend: {
+      height: {
+        '1/3s': '34vh',
+        '2/3s': '66vh'
+      },
+      fontSize: {
+        '8': '.8rem',
+        '9': '.9rem'
+      },
       colors: {
         'black': '#010101',
         'supernova': '#fdcc0a',
@@ -12,7 +20,9 @@ module.exports = {
         'buttered-rum': '#a5860c',
         'outer-space': '#1e2328',
         'play-light': '#f2f2f2',
-        'play-dark': '#3e4246'
+        'play-dark': '#3e4246',
+        'fb-btn': '#1877f2',
+        'yt-btn': '#ff0000'
       },
       backgroundImage: {
         'photo-1': 'url("./photos/background1.jpg")',

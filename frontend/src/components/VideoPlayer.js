@@ -1,16 +1,16 @@
 import { useState } from 'react';
 
 function VideoPlayer() {
+    // videos list with urls
+    const videos = [
+      ['Hague (Home Sessions #1)', 'TPnMZWR_2To'],
+      ['Sangria (In The Nature #2)', '4IErWZv3MCE'],
+      ['Swinger Dance (In The Nature #1)', '_xKkcRnJPlc']
+    ];
+
   // state
   const [url, setUrl] = useState(videos[0][1]);
-
-  // videos list with urls
-  const videos = [
-    ['Hague (Home Sessions #1)', 'TPnMZWR_2To'],
-    ['Sangria (In The Nature #2)', '4IErWZv3MCE'],
-    ['Swinger Dance (In The Nature #1)', '_xKkcRnJPlc']
-  ];
-
+  
   return (
     <div className="mx-auto max-w-2xl">
       <div className="mx-auto rounded-lg bg-silver/20 text-outer-space shadow-lg dark:text-white">

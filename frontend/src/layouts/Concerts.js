@@ -37,7 +37,7 @@ function Concerts({ verticalScreen }) {
                 <h2 className="mb-6 w-fit select-text border-b-2 border-b-supernova text-xl font-bold">
                   Microband na żywo
                 </h2>
-                <p className="mb-6 select-text pb-2 text-justify text-[.8rem] sm:text-[.9rem] lg:pb-0">
+                <p className="mb-6 select-text pb-2 text-justify text-8 sm:text-9 lg:pb-0">
                   Repertuar duetu tworzą kompozycje autorskie. Na przestrzeni każdego utworu łączą się
                   motywy muzyczne inspirowane różnymi stylami. W&nbsp;repertuarze znajdują się utwory
                   energiczne, sprawdzające się zarówno na początku jak i&nbsp;na końcu występu,
