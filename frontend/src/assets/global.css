@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* rotate vinyl icon when song is playing */
 /* https://stackoverflow.com/questions/6410730/css-endless-rotation-animation */
 @-webkit-keyframes rotating /* Safari and Chrome */ {
   from {

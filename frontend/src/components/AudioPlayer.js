@@ -13,10 +13,11 @@ function AudioPlayer() {
   const [currentTime, setCurrentTime] = useState('00:00');
   const [duration, setDuration] = useState('00:00');
 
-  // ref
+  // refs
   const audio = useRef();
   const progress = useRef();
 
+  // songs list with urls
   const songs = [
     ['Dziki zwierz', 'api/mp3/zwierz'],
     ['Sangria', 'api/mp3/sangria'],
@@ -31,6 +32,7 @@ function AudioPlayer() {
 
   let timer;
 
+  // update progress bar when playing
   useEffect(() => {
     if (playing) {
       timer = setInterval(() => {
@@ -40,6 +42,7 @@ function AudioPlayer() {
     return () => clearInterval(timer);
   }, [playing]);
 
+  // format time to 00:00
   const calculateTime = (s) => {
     const minutes = Math.floor(s / 60);
     const returnedMinutes = minutes < 10 ? `0${minutes}` : `${minutes}`;
@@ -48,6 +51,7 @@ function AudioPlayer() {
     return `${returnedMinutes}:${returnedSeconds}`;
   };
 
+  // play song when press title on playlist
   const playByTitle = (id) => {
     if (!playing) {
       setPlaying(true);
@@ -59,11 +63,13 @@ function AudioPlayer() {
     setSongId(id);
   };
 
+  // play/pause current song
   const playPauseCurrent = () => {
     playing ? audio.current.pause() : audio.current.play();
     setPlaying(!playing);
   };
 
+  // switch to previous song
   const previousSong = () => {
     let id = songId;
     id === 0 ? (id = songs.length - 1) : (id -= 1);
@@ -74,6 +80,7 @@ function AudioPlayer() {
     setCurrentTime(calculateTime(audio.current.currentTime));
   };
 
+  // switch to next song
   const nextSong = () => {
     let id = songId;
     id < songs.length - 1 ? (id += 1) : (id = 0);
@@ -84,6 +91,7 @@ function AudioPlayer() {
     setCurrentTime(calculateTime(audio.current.currentTime));
   };
 
+  // update progress bar
   const updateRangeValue = () => {
     let position = 0;
     if (!isNaN(audio.current.duration)) {
@@ -93,11 +101,13 @@ function AudioPlayer() {
     }
   };
 
+  // set current time by progress bar position
   const changeRangeValue = () => {
     audio.current.currentTime = parseInt((audio.current.duration * progress.current.value) / 100);
     setCurrentTime(calculateTime(audio.current.currentTime));
   };
 
+  // handle if song ends
   const handleEnd = () => {
     let id = songId;
     if (id < songs.length - 1) {

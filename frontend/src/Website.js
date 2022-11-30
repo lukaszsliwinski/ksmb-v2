@@ -24,14 +24,17 @@ function Website() {
   // ref to html element
   const html = document.documentElement;
 
+  // add website scrollbar style on page load
   useEffect(() => {
     html.classList.add('scroll-smooth', 'scrollbar-thin', 'scrollbar-thumb-buttered-rum');
   }, []);
 
+  // handle dark mode switch and add class to html element
   useEffect(() => {
     darkMode ? html.classList.add('dark') : html.classList.remove('dark');
   }, [darkMode]);
 
+  // handle window top
   useEffect(() => {
     const handleScroll = () => (window.scrollY === 0 ? setWindowTop(true) : setWindowTop(false));
     window.addEventListener('scroll', handleScroll);
@@ -39,6 +42,7 @@ function Website() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [windowTop]);
 
+  // handle window size change
   useEffect(() => {
     setVerticalScreen(screenHeight > screenWidth);
   }, [screenHeight, screenWidth]);
