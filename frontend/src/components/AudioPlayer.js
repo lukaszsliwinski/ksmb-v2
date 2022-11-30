@@ -30,13 +30,17 @@ function AudioPlayer() {
     ['7 na 7', 'api/mp3/7na7']
   ];
 
-  let timer;
-
   // update progress bar when playing
   useEffect(() => {
+    let timer;
     if (playing) {
       timer = setInterval(() => {
-        updateRangeValue();
+        let position = 0;
+        if (!isNaN(audio.current.duration)) {
+          position = audio.current.currentTime * (100 / audio.current.duration);
+          progress.current.value = position;
+          setCurrentTime(calculateTime(audio.current.currentTime));
+        }
       }, 1000);
     }
     return () => clearInterval(timer);
@@ -89,16 +93,6 @@ function AudioPlayer() {
     playing ? audio.current.play() : (progress.current.value = 0);
     setSongId(id);
     setCurrentTime(calculateTime(audio.current.currentTime));
-  };
-
-  // update progress bar
-  const updateRangeValue = () => {
-    let position = 0;
-    if (!isNaN(audio.current.duration)) {
-      position = audio.current.currentTime * (100 / audio.current.duration);
-      progress.current.value = position;
-      setCurrentTime(calculateTime(audio.current.currentTime));
-    }
   };
 
   // set current time by progress bar position

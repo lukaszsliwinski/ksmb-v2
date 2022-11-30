@@ -10,13 +10,14 @@ function VideoPlayer() {
 
   // state
   const [url, setUrl] = useState(videos[0][1]);
-  
+
   return (
     <div className="mx-auto max-w-2xl">
       <div className="mx-auto rounded-lg bg-silver/20 text-outer-space shadow-lg dark:text-white">
         <div className="p-4">
           <div className="embed-responsive embed-responsive16by9 relative w-full overflow-hidden rounded-lg pt-[56.25%]">
             <iframe
+              title="KSMicroband Youtube Video Player"
               className="embed-responsive-item absolute top-0 right-0 bottom-0 left-0 h-full w-full"
               src={`https://www.youtube.com/embed/${url}?enablejsapi=1&amp;origin=https%3A%2F%2Fksmicroband.pl`}
               allowFullScreen="1"

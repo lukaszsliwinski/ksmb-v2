@@ -27,12 +27,12 @@ function Website() {
   // add website scrollbar style on page load
   useEffect(() => {
     html.classList.add('scroll-smooth', 'scrollbar-thin', 'scrollbar-thumb-buttered-rum');
-  }, []);
+  }, [html.classList]);
 
   // handle dark mode switch and add class to html element
   useEffect(() => {
     darkMode ? html.classList.add('dark') : html.classList.remove('dark');
-  }, [darkMode]);
+  }, [darkMode, html.classList]);
 
   // handle window top
   useEffect(() => {

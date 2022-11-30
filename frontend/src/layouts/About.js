@@ -20,7 +20,7 @@ function About() {
               <img
                 src={kuba}
                 className="mx-auto w-5/6 rounded-lg shadow-lg sm:w-2/3 lg:w-full"
-                alt="bio photo"
+                alt="kuba"
               />
             </div>
           </XyzTransition>
@@ -59,7 +59,7 @@ function About() {
               <img
                 src={lukasz}
                 className="mx-auto w-5/6 rounded-lg shadow-lg sm:w-2/3 lg:w-full"
-                alt="bio photo"
+                alt="lukasz"
               />
             </div>
           </XyzTransition>
@@ -88,7 +88,11 @@ function About() {
             appearVisible={{ threshold: .5, rootMargin: '0px' }}
           >
             <div className="mx-auto -mb-6 hidden w-11/12 md:w-3/4 lg:mb-0 lg:block lg:w-full xl:col-span-2">
-              <img src={lukasz} className="w-full rounded-lg shadow-lg" alt="bio photo" />
+              <img
+                src={lukasz}
+                className="w-full rounded-lg shadow-lg"
+                alt="lukasz"
+              />
             </div>
           </XyzTransition>
         </div>
@@ -104,7 +108,7 @@ function About() {
               <img
                 src={microband}
                 className="mx-auto w-5/6 rounded-lg shadow-lg sm:w-2/3 lg:w-full"
-                alt="bio photo"
+                alt="microband"
               />
             </div>
           </XyzTransition>

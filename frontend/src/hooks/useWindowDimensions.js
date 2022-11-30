@@ -1,32 +1,27 @@
 // get window size hook
 // https://stackoverflow.com/questions/36862334/get-viewport-window-height-in-reactjs
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 export default function useWindowDimensions() {
-  const hasWindow = typeof window !== 'undefined';
-
-  function getWindowDimensions() {
-    const screenWidth = hasWindow ? window.innerWidth : null;
-    const screenHeight = hasWindow ? window.innerHeight : null;
+  const getWindowDimensions = useCallback(() => {
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
     return {
       screenWidth,
       screenHeight
     };
-  }
+  }, []);
 
   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
 
   useEffect(() => {
-    if (hasWindow) {
-      function handleResize() {
-        setWindowDimensions(getWindowDimensions());
-      }
-
-      window.addEventListener('resize', handleResize);
-      return () => window.removeEventListener('resize', handleResize);
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
     }
-  }, [hasWindow]);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [getWindowDimensions]);
 
   return windowDimensions;
 }

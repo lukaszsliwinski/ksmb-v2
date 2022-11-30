@@ -22,7 +22,7 @@ function Concerts({ verticalScreen }) {
                 src={concert}
                 className="z-10 mx-auto w-11/12 rounded-lg shadow-lg md:w-3/4 lg:ml-12 lg:w-full"
                 id="cta-img-nml-50"
-                alt="concert photo"
+                alt="microband concert"
               />
             </div>
           </div>
