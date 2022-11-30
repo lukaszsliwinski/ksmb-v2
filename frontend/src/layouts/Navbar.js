@@ -28,7 +28,7 @@ function Navbar({ darkMode, setDarkMode, windowTop }) {
             ['koncerty', '#concerts'],
             ['kontakt', '#footer']
           ].map(([title, href]) => (
-            <li className="text-md sm:text-xl md:text-2xl text-white first-of-type:hidden hover:text-silver">
+            <li key={href} className="text-md sm:text-xl md:text-2xl text-white first-of-type:hidden hover:text-silver">
               <a href={href}>{title}</a>
             </li>
           ))}
