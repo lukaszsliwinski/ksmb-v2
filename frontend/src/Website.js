@@ -44,7 +44,7 @@ function Website() {
   }, [screenHeight, screenWidth]);
 
   return (
-    <div className="select-none overflow-x-hidden" id="main">
+    <div className="select-none overflow-hidden" id="main">
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} windowTop={windowTop} />
       <Landing verticalScreen={verticalScreen} />
       <About />

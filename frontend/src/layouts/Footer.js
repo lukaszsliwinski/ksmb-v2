@@ -6,7 +6,7 @@ import DownloadBtn from '../components/DownloadBtn';
 function Footer() {
   return (
     <section
-      className="flex lg:h-[34vh] w-full flex-col justify-between bg-white pt-16 pb-4 text-outer-space dark:bg-outer-space dark:text-white"
+      className="flex lg:h-[34vh] w-full flex-col justify-between bg-white pt-16 pb-4 text-outer-space transition-colors dark:bg-outer-space dark:text-white"
       id="footer"
     >
       <div className="flex flex-col md:flex-row">
@@ -62,7 +62,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="flex mt-12 w-full justify-center">
+      <div className="flex mt-10 mb-2 w-full justify-center">
         <p>&copy; 2021-2022 KSMICROBAND</p>
       </div>
     </section>
