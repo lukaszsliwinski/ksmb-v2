@@ -4,8 +4,12 @@ module.exports = {
   content: ['./src/**/*.{html,js}', './node_modules/tw-elements/dist/js/**/*.js'],
   theme: {
     extend: {
+      width: {
+        '1/2s': '50vw'
+      },
       height: {
         '1/3s': '34vh',
+        '1/2s': '50vh',
         '2/3s': '66vh'
       },
       fontSize: {
