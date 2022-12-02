@@ -45,6 +45,11 @@ function Website() {
   // handle window size change
   useEffect(() => {
     setVerticalScreen(screenHeight > screenWidth);
+
+    // update view height for mobile
+    // https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
   }, [screenHeight, screenWidth]);
 
   return (
