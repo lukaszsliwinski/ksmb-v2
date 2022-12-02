@@ -7,7 +7,7 @@ import microband from '../assets/photos/microband.jpg';
 function About() {
   return (
     <section
-      className="h-full min-h-screen w-full bg-white py-28 px-6 transition-colors dark:bg-outer-space md:px-28"
+      className="min-h-screen w-full bg-white py-28 px-6 transition-colors dark:bg-outer-space md:px-28"
       id="about"
     >
       <div className="container mx-auto text-center lg:text-left 2xl:max-w-screen-xl">

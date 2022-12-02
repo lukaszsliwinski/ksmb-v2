@@ -63,7 +63,7 @@ function Footer() {
       </div>
 
       <div className="flex mt-10 mb-2 w-full justify-center">
-        <p>&copy; 2021-2022 KSMICROBAND</p>
+        <p className="text-sm">&copy; 2021-2022 KSMICROBAND</p>
       </div>
     </section>
   );

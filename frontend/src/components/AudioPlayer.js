@@ -119,7 +119,7 @@ function AudioPlayer() {
   };
 
   return (
-    <div className="mx-auto md:max-w-md">
+    <div className="mx-auto text-sm md:max-w-md">
       <div className="mx-auto rounded-lg bg-silver/20 pt-4 text-outer-space shadow-lg dark:text-white">
         <audio
           ref={audio}
@@ -149,16 +149,16 @@ function AudioPlayer() {
             className="inline-block rounded-full text-outer-space transition duration-150 ease-in-out dark:text-white"
             onClick={() => previousSong()}
           >
-            <Prev className="h-7 w-7" />
+            <Prev className="h-6 w-6" />
           </button>
           <button
             type="button"
             data-mdb-ripple="true"
             data-mdb-ripple-color="light"
-            className="mx-6 inline-block h-12 w-12 rounded-full bg-outer-space text-play-light transition duration-150 ease-in-out dark:bg-white dark:text-play-dark"
+            className="mx-6 inline-block h-8 w-8 rounded-full bg-outer-space text-play-light transition duration-150 ease-in-out dark:bg-white dark:text-play-dark"
             onClick={() => playPauseCurrent()}
           >
-            {playing ? <Pause className="m-auto h-7 w-7" /> : <Play className="ml-3 h-7 w-7" />}
+            {playing ? <Pause className="m-auto h-5 w-5" /> : <Play className="ml-2 h-5 w-5" />}
           </button>
           <button
             type="button"
@@ -167,7 +167,7 @@ function AudioPlayer() {
             className="inline-block rounded-full text-outer-space transition duration-150 ease-in-out dark:text-white"
             onClick={() => nextSong()}
           >
-            <Next className="h-7 w-7" />
+            <Next className="h-6 w-6" />
           </button>
         </div>
 
@@ -184,7 +184,7 @@ function AudioPlayer() {
             >
               <span>{song[0]}</span>
               <span>
-                {id === songId && playing ? <Vinyl className="h-6 w-6 rotating" /> : <Play className="mr-1.5 h-3 w-3" />}
+                {id === songId && playing ? <Vinyl className="h-5 w-5 rotating" /> : <Play className="mr-1.5 h-3 w-3" />}
               </span>
             </li>
           ))}

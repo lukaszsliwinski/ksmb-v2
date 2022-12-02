@@ -12,7 +12,7 @@ function VideoPlayer() {
   const [url, setUrl] = useState(videos[0][1]);
 
   return (
-    <div className="mx-auto max-w-2xl">
+    <div className="mx-auto max-w-2xl h-full text-sm">
       <div className="mx-auto rounded-lg bg-silver/20 text-outer-space shadow-lg dark:text-white">
         <div className="p-4">
           <div className="embed-responsive embed-responsive16by9 relative w-full overflow-hidden rounded-lg pt-[56.25%]">
