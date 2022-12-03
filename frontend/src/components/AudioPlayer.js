@@ -119,7 +119,7 @@ function AudioPlayer() {
   };
 
   return (
-    <div className="mx-auto text-sm md:max-w-md">
+    <div className="mx-auto text-sm max-w-md">
       <div className="mx-auto rounded-lg bg-silver/20 pt-4 text-outer-space shadow-lg dark:text-white">
         <audio
           ref={audio}

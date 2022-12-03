@@ -4,10 +4,13 @@ import kuba from '../assets/photos/kuba.jpg';
 import lukasz from '../assets/photos/lukasz.jpg';
 import microband from '../assets/photos/microband.jpg';
 
-function About() {
+function About({ verticalScreen }) {
   return (
     <section
-      className="min-h-screen w-full bg-white py-28 px-6 transition-colors dark:bg-outer-space md:px-28"
+      className={`
+        w-full bg-white pt-28 px-6 transition-colors dark:bg-outer-space md:px-28
+        ${verticalScreen ? '' : 'min-h-screen'}
+      `}
       id="about"
     >
       <div className="container mx-auto text-center lg:text-left 2xl:max-w-screen-xl">

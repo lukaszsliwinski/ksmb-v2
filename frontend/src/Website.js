@@ -56,13 +56,13 @@ function Website() {
     <div className="select-none overflow-hidden" id="main">
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} windowTop={windowTop} />
       <Landing verticalScreen={verticalScreen} />
-      <About />
+      <About verticalScreen={verticalScreen} />
       {!verticalScreen && <Background bgPhoto="bg-photo-3" />}
       <Music verticalScreen={verticalScreen} />
       {!verticalScreen && <Background bgPhoto="bg-photo-4" />}
       <Concerts verticalScreen={verticalScreen} />
       {!verticalScreen && <Background bgPhoto="bg-photo-5" />}
-      <Footer />
+      <Footer verticalScreen={verticalScreen} />
     </div>
   );
 }

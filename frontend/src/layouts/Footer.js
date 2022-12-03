@@ -3,10 +3,13 @@ import { ReactComponent as Facebook } from '../assets/svg/facebook.svg';
 import { ReactComponent as Youtube } from '../assets/svg/youtube.svg';
 import DownloadBtn from '../components/DownloadBtn';
 
-function Footer() {
+function Footer({ verticalScreen }) {
   return (
     <section
-      className="flex lg:h-1/3s w-full flex-col justify-between bg-white pt-16 pb-4 text-outer-space transition-colors dark:bg-outer-space dark:text-white"
+      className={`
+        flex mx-auto w-full max-w-7xl flex-col justify-between bg-white pb-4 text-outer-space transition-colors dark:bg-outer-space dark:text-white
+        ${verticalScreen ? 'min-h-screen pt-28' : 'lg:h-1/3s pt-16'}
+      `}
       id="footer"
     >
       <div className="flex flex-col md:flex-row">

@@ -7,12 +7,12 @@ function Music({ verticalScreen }) {
   return (
     <section
       className={`
-        flex w-full flex-col bg-white py-28 px-6 transition-colors dark:bg-outer-space lg:flex-row xl:px-28
+        flex mx-auto w-full max-w-7xl flex-col bg-white pt-28 px-6 transition-colors dark:bg-outer-space lg:flex-row xl:px-28
         ${verticalScreen ? '' : 'min-h-screen'}
       `}
       id="music"
     >
-      <div className="flex justify-center lg:w-1/3">
+      <div className="flex justify-center lg:w-1/3 lg:px-4">
         <XyzTransition
           xyz="fade left ease-in-out duration-6"
           appearVisible={{ threshold: .5, rootMargin: '0px' }}
@@ -22,7 +22,7 @@ function Music({ verticalScreen }) {
           </div>
         </XyzTransition>
       </div>
-      <div className="flex justify-center lg:w-2/3">
+      <div className="flex justify-center lg:w-2/3 lg:px-4">
         <XyzTransition
           xyz="fade right ease-in-out duration-6"
           appearVisible={{ threshold: .5, rootMargin: '0px' }}

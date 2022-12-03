@@ -6,7 +6,7 @@ function Concerts({ verticalScreen }) {
   return (
     <section
       className={`
-        w-full bg-white py-28 px-6 transition-colors dark:bg-outer-space md:px-16 xl:px-28
+        mx-auto w-full max-w-7xl bg-white pt-28 px-6 transition-colors dark:bg-outer-space md:px-16 xl:px-28
         ${verticalScreen ? '' : 'min-h-screen'}
       `}
       id="concerts"
