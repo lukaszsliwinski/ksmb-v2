@@ -8,8 +8,8 @@ function About({ verticalScreen }) {
   return (
     <section
       className={`
-        w-full bg-white pt-28 px-6 transition-colors dark:bg-outer-space md:px-28
-        ${verticalScreen ? '' : 'min-h-screen'}
+        w-full bg-white px-6 transition-colors dark:bg-outer-space md:px-28
+        ${verticalScreen ? 'pt-28' : 'min-h-screen py-28'}
       `}
       id="about"
     >

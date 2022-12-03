@@ -7,8 +7,8 @@ function Music({ verticalScreen }) {
   return (
     <section
       className={`
-        flex mx-auto w-full max-w-7xl flex-col bg-white pt-28 px-6 transition-colors dark:bg-outer-space lg:flex-row xl:px-28
-        ${verticalScreen ? '' : 'min-h-screen'}
+        flex mx-auto w-full max-w-7xl flex-col bg-white px-6 transition-colors dark:bg-outer-space lg:flex-row xl:px-28
+        ${verticalScreen ? 'pt-28' : 'min-h-screen py-28'}
       `}
       id="music"
     >
