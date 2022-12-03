@@ -5,11 +5,11 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        '1/2s': '50vw'
+        '5/12s': '42vw'
       },
       height: {
         '1/3s': '34vh',
-        '1/2s': '50vh',
+        '5/12s': '42vh',
         '2/3s': '66vh'
       },
       fontSize: {
