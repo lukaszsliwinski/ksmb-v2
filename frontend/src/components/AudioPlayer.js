@@ -19,9 +19,10 @@ function AudioPlayer() {
 
   // songs list with urls
   const songs = [
+    ['Zapowiedź', 'api/mp3/zapowiedz'],
+    ['Hague', 'api/mp3/hague'],
     ['Dziki zwierz', 'api/mp3/zwierz'],
     ['Sangria', 'api/mp3/sangria'],
-    ['Hague', 'api/mp3/hague'],
     ['Kwarantanna', 'api/mp3/kwarantanna'],
     ['Swinger Dance', 'api/mp3/swinger'],
     ['Hawai', 'api/mp3/hawai'],
