@@ -21,6 +21,9 @@ function Website() {
   // get screen size
   const { screenHeight, screenWidth } = useWindowDimensions();
 
+  // handle mobile (include horizontal position)
+  const isMobile = screenWidth < 950;
+
   // ref to html element
   const html = document.documentElement;
 
@@ -53,16 +56,16 @@ function Website() {
   }, [screenHeight, screenWidth]);
 
   return (
-    <div className="select-none overflow-hidden" id="main">
+    <div className="select-none overflow-hidden bg-white transition-colors dark:bg-outer-space" id="main">
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} windowTop={windowTop} />
       <Landing verticalScreen={verticalScreen} />
       <About verticalScreen={verticalScreen} />
-      {!verticalScreen && <Background bgPhoto="bg-photo-3" />}
+      {!verticalScreen && !isMobile && <Background bgPhoto="bg-photo-3" />}
       <Music verticalScreen={verticalScreen} />
-      {!verticalScreen && <Background bgPhoto="bg-photo-4" />}
+      {!verticalScreen && !isMobile && <Background bgPhoto="bg-photo-4" />}
       <Concerts verticalScreen={verticalScreen} />
-      {!verticalScreen && <Background bgPhoto="bg-photo-5" />}
-      <Footer verticalScreen={verticalScreen} />
+      {!verticalScreen && !isMobile && <Background bgPhoto="bg-photo-5" />}
+      <Footer verticalScreen={verticalScreen} isMobile={isMobile}/>
     </div>
   );
 }
