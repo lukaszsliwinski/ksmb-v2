@@ -7,6 +7,10 @@
   height: calc(var(--vh, 1vh) * 100)
 }
 
+@media (hover: none) {
+  a:hover { color: inherit !important; }
+}
+
 /* rotate vinyl icon when song is playing */
 /* https://stackoverflow.com/questions/6410730/css-endless-rotation-animation */
 @-webkit-keyframes rotating /* Safari and Chrome */ {

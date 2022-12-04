@@ -18,7 +18,7 @@ function Navbar({ darkMode, setDarkMode, windowTop }) {
         <Scrollspy
           className="flex space-x-2 sm:space-x-6"
           items={['landing', 'about', 'music', 'concerts', 'footer']}
-          currentClassName="text-supernova"
+          currentClassName="text-supernova hover:text-supernova"
           offset={-100}
         >
           {[
@@ -28,8 +28,8 @@ function Navbar({ darkMode, setDarkMode, windowTop }) {
             ['koncerty', '#concerts'],
             ['kontakt', '#footer']
           ].map(([title, href]) => (
-            <li key={href} className="text-md sm:text-xl md:text-2xl text-white first-of-type:hidden hover:text-supernova">
-              <a href={href}>{title}</a>
+            <li key={href} className="text-md sm:text-xl md:text-2xl text-white first-of-type:hidden">
+              <a className="hover:text-silver" href={href}>{title}</a>
             </li>
           ))}
         </Scrollspy>
