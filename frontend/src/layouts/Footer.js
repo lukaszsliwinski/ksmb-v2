@@ -8,7 +8,7 @@ function Footer({ verticalScreen }) {
     <section
       className={`
         flex mx-auto w-full max-w-7xl flex-col justify-between bg-white pb-4 text-outer-space transition-colors dark:bg-outer-space dark:text-white
-        ${verticalScreen ? 'min-h-screen pt-28' : 'lg:h-1/3s pt-16'}
+        ${verticalScreen ? 'min-h-screen pt-28' : 'lg:h-1/3s pt-20'}
       `}
       id="footer"
     >
