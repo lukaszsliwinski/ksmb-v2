@@ -16,11 +16,11 @@ function Concerts({ verticalScreen }) {
           xyz="fade left ease-in-out duration-6"
           appearVisible={{ threshold: .5, rootMargin: '0px' }}
         >
-          <div className="-mb-2 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12">
+          <div className="-mb-6 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12">
             <div className="flex lg:py-12">
               <img
                 src={concert}
-                className="z-10 mx-auto w-11/12 rounded-lg shadow-lg md:w-3/4 lg:ml-12 lg:w-full"
+                className="mx-auto w-11/12 rounded-lg shadow-lg md:w-3/4 lg:z-10 lg:ml-12 lg:w-full"
                 id="cta-img-nml-50"
                 alt="microband concert"
               />
@@ -32,7 +32,7 @@ function Concerts({ verticalScreen }) {
           appearVisible={{ threshold: .5, rootMargin: '0px' }}
         >
           <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
-            <div className="flex h-full items-center rounded-lg bg-silver/20 p-6 text-center text-outer-space shadow-lg dark:text-white lg:pl-12 lg:text-left">
+            <div className="flex h-full items-center rounded-lg bg-silver/20 p-6 text-center text-outer-space shadow-lg backdrop-blur-xl dark:text-white lg:pl-12 lg:text-left">
               <div className="lg:pl-12">
                 <h2 className="mb-6 w-fit select-text border-b-2 border-b-supernova text-xl font-bold">
                   Microband na żywo
