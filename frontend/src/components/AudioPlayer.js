@@ -28,6 +28,7 @@ function AudioPlayer() {
     ['Hawai', 'api/mp3/hawai'],
     ['Motyw', 'api/mp3/motyw'],
     ['Czwarty', 'api/mp3/czwarty'],
+    ['Cordoba', 'api/mp3/cordoba'],
     ['7 na 7', 'api/mp3/7na7']
   ];
 
