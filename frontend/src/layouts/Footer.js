@@ -20,7 +20,7 @@ function Footer({ verticalScreen, isMobile }) {
             </div>
 
             <div className="ml-3">
-              <p className="mb-1 font-bold">adres kontakowy</p>
+              <p className="mb-1 font-bold">adres kontaktowy</p>
               <p className="select-text text-outer-space/60 dark:text-white/60">
                 ksmicroband@outlook.com
               </p>

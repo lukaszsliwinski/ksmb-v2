@@ -20,14 +20,14 @@ function AudioPlayer() {
   // songs list with urls
   const songs = [
     ['Zapowiedź', 'api/mp3/zapowiedz'],
-    ['Hague', 'api/mp3/hague'],
-    ['Dziki zwierz', 'api/mp3/zwierz'],
-    ['Sangria', 'api/mp3/sangria'],
-    ['Kwarantanna', 'api/mp3/kwarantanna'],
-    ['Swinger Dance', 'api/mp3/swinger'],
     ['Hawai', 'api/mp3/hawai'],
-    ['Motyw', 'api/mp3/motyw'],
     ['Czwarty', 'api/mp3/czwarty'],
+    ['Swinger Dance', 'api/mp3/swinger'],
+    ['Hague', 'api/mp3/hague'],
+    ['Motyw', 'api/mp3/motyw'],
+    ['Kwarantanna', 'api/mp3/kwarantanna'],
+    ['Sangria', 'api/mp3/sangria'],
+    ['Dziki zwierz', 'api/mp3/zwierz'],
     ['Cordoba', 'api/mp3/cordoba'],
     ['7 na 7', 'api/mp3/7na7']
   ];
