@@ -36,7 +36,7 @@ function About({ verticalScreen }) {
                 <h2 className="mb-2 w-fit border-b-2 border-b-supernova text-xl font-bold">
                   Kuba Kołodziejczyk
                 </h2>
-                <p className="text-justify text-8 sm:text-9">
+                <p className="text-justify text-8 sm:text-9 leading-relaxed tracking-wide">
                   Skrzypek zajmujący się muzyką klasyczną, rozrywkową oraz uczący rzemiosła. Gra od
                   7&nbsp;roku życia. Na co dzień pracuje jako skrzypek w&nbsp;Filharmonii Śląskiej.
                   Zagrał około 600&nbsp;koncertów na scenach Śląska i&nbsp;reszty kraju, a&nbsp;także
@@ -75,7 +75,7 @@ function About({ verticalScreen }) {
                 <h2 className="mb-2 w-fit border-b-2 border-b-supernova text-xl font-bold">
                   Łukasz Śliwiński
                 </h2>
-                <p className="text-justify text-8 sm:text-9">
+                <p className="text-justify text-8 sm:text-9 leading-relaxed tracking-wide">
                   Gitarzysta samouk, rozpoczął swoją gitarową podróż w&nbsp;wieku 15&nbsp;lat.
                   Doświadczenie sceniczne i&nbsp;studyjne zdobywał w&nbsp;zespołach rockowych. Od
                   kilku lat rozszerza spektrum zainteresowań czerpiąc z&nbsp;gatunków muzycznych
@@ -124,7 +124,7 @@ function About({ verticalScreen }) {
                 <h2 className="mb-2 w-fit border-b-2 border-b-supernova text-xl font-bold">
                   Microband
                 </h2>
-                <p className="text-justify text-8 sm:text-9">
+                <p className="text-justify text-8 sm:text-9 leading-relaxed tracking-wide">
                   Duet KSMicroband gra autorską muzykę, która łączy korzenie rockowych oraz
                   klasycznych dźwięków. Z&nbsp;połączenia różnych, pozornie odmiennych temperamentów
                   muzycznych, powstała nową jakość. Zespół nie wspomaga się sekcją basu
