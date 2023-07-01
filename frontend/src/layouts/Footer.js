@@ -65,7 +65,7 @@ function Footer({ verticalScreen, isMobile }) {
         </div>
       </div>
 
-      <div className="flex mt-10 mb-2 w-full justify-center">
+      <div className="flex mt-6 mb-2 w-full justify-center">
         <p className="text-sm">&copy; 2021-2023 KSMICROBAND</p>
       </div>
     </section>
