@@ -56,7 +56,10 @@ function Website() {
   }, [screenHeight, screenWidth]);
 
   return (
-    <div className="select-none overflow-hidden bg-white transition-colors dark:bg-outer-space" id="main">
+    <div
+      className="select-none overflow-hidden bg-white transition-colors dark:bg-outer-space"
+      id="main"
+    >
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} windowTop={windowTop} />
       <Landing verticalScreen={verticalScreen} />
       <About verticalScreen={verticalScreen} />
@@ -65,7 +68,7 @@ function Website() {
       {!verticalScreen && !isMobile && <Background bgPhoto="bg-photo-4" />}
       <Concerts verticalScreen={verticalScreen} />
       {!verticalScreen && !isMobile && <Background bgPhoto="bg-photo-5" />}
-      <Footer verticalScreen={verticalScreen} isMobile={isMobile}/>
+      <Footer verticalScreen={verticalScreen} isMobile={isMobile} />
     </div>
   );
 }

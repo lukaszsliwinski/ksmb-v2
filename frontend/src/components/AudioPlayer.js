@@ -121,7 +121,7 @@ function AudioPlayer() {
   };
 
   return (
-    <div className="mx-auto text-sm max-w-md">
+    <div className="mx-auto max-w-md text-sm">
       <div className="mx-auto rounded-lg bg-silver/20 pt-4 text-outer-space shadow-lg dark:text-white">
         <audio
           ref={audio}
@@ -186,7 +186,11 @@ function AudioPlayer() {
             >
               <span>{song[0]}</span>
               <span>
-                {id === songId && playing ? <Vinyl className="h-5 w-5 rotating" /> : <Play className="mr-1.5 h-3 w-3" />}
+                {id === songId && playing ? (
+                  <Vinyl className="rotating h-5 w-5" />
+                ) : (
+                  <Play className="mr-1.5 h-3 w-3" />
+                )}
               </span>
             </li>
           ))}

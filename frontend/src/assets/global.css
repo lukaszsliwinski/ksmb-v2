@@ -4,11 +4,13 @@
 
 /* https://css-tricks.com/the-trick-to-viewport-units-on-mobile/ */
 .h-screen-mobile {
-  height: calc(var(--vh, 1vh) * 100)
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 @media (hover: none) {
-  a:hover { color: inherit !important; }
+  a:hover {
+    color: inherit !important;
+  }
 }
 
 /* rotate vinyl icon when song is playing */

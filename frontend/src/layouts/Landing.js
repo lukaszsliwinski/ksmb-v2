@@ -5,7 +5,7 @@ function Landing({ verticalScreen }) {
   return (
     <div
       className={`
-        top-0 h-screen-mobile bg-cover bg-fixed bg-center
+        h-screen-mobile top-0 bg-cover bg-fixed bg-center
         ${verticalScreen ? 'bg-photo-1' : 'bg-photo-2'}
       `}
       id="landing"

@@ -7,15 +7,15 @@ function Footer({ verticalScreen, isMobile }) {
   return (
     <section
       className={`
-        flex mx-auto w-full max-w-7xl flex-col justify-between bg-white pb-4 text-outer-space transition-colors dark:bg-outer-space dark:text-white
-        ${verticalScreen || isMobile ? 'min-h-screen pt-28' : 'min-h-1/3s lg:h-1/3s pt-20'}
+        mx-auto flex w-full max-w-7xl flex-col justify-between bg-white pb-4 text-outer-space transition-colors dark:bg-outer-space dark:text-white
+        ${verticalScreen || isMobile ? 'min-h-screen pt-28' : 'min-h-1/3s pt-20 lg:h-1/3s'}
       `}
       id="footer"
     >
       <div className="flex flex-col md:flex-row">
-        <div className="flex w-full justify-center lg:w-1/3 mb-16 md:mb-0">
+        <div className="mb-16 flex w-full justify-center md:mb-0 lg:w-1/3">
           <div className="flex items-start">
-            <div className="flex mx-3 h-14 w-14 items-center justify-center rounded-md bg-supernova p-4 shadow-md">
+            <div className="mx-3 flex h-14 w-14 items-center justify-center rounded-md bg-supernova p-4 shadow-md">
               <Mail className="w-6 text-white dark:text-outer-space" />
             </div>
 
@@ -28,15 +28,23 @@ function Footer({ verticalScreen, isMobile }) {
           </div>
         </div>
 
-        <div className="flex w-full flex-col items-center justify-start lg:w-1/3 mb-16 md:mb-0">
+        <div className="mb-16 flex w-full flex-col items-center justify-start md:mb-0 lg:w-1/3">
           <p className="mb-1 font-bold">dokumenty do pobrania</p>
           <div className="flex flex-col">
-            <DownloadBtn label="oferta koncertowa" file="oferta" download="ksmicroband_oferta_koncertowa" />
-            <DownloadBtn label="rider techniczny" file="rider" download="ksmicroband_rider_techniczny" />
+            <DownloadBtn
+              label="oferta koncertowa"
+              file="oferta"
+              download="ksmicroband_oferta_koncertowa"
+            />
+            <DownloadBtn
+              label="rider techniczny"
+              file="rider"
+              download="ksmicroband_rider_techniczny"
+            />
           </div>
         </div>
 
-        <div className="flex w-full flex-col items-center justify-start lg:w-1/3 mb-16 md:mb-0">
+        <div className="mb-16 flex w-full flex-col items-center justify-start md:mb-0 lg:w-1/3">
           <p className="mb-1 font-bold">jesteśmy również na</p>
           <div className="flex items-start">
             <a
@@ -65,7 +73,7 @@ function Footer({ verticalScreen, isMobile }) {
         </div>
       </div>
 
-      <div className="flex mt-6 mb-2 w-full justify-center">
+      <div className="mt-6 mb-2 flex w-full justify-center">
         <p className="text-sm">&copy; 2021-2023 KSMICROBAND</p>
       </div>
     </section>

@@ -6,10 +6,10 @@ function DarkModeSwitch({ darkMode, setDarkMode, windowTop }) {
     <div onClick={() => setDarkMode(!darkMode)}>
       <div
         className={`
-          relative mx-2 h-[23.5px] w-[2.8rem] cursor-pointer rounded-[12px] border border-white bg-transparent p-0.5 sm:h-8 sm:w-[3.75rem] sm:rounded-[16px] sm:p-1
-          dark:border-0 dark:bg-white
-          before:absolute before:z-[2] before:block before:h-[18px] before:w-[18px] before:translate-x-0 before:rounded-[10px] before:bg-white before:transition-transform before:duration-100 before:ease-linear before:content-[''] before:sm:h-[1.375rem] before:sm:w-[1.375rem] before:sm:rounded-[12px]
-          before:dark:h-[1.2rem] before:dark:w-[1.2rem] before:dark:rounded-[10px] before:dark:sm:h-[1.5rem] before:dark:sm:w-[1.5rem] before:dark:sm:rounded-[12px]
+          relative mx-2 h-[23.5px] w-[2.8rem] cursor-pointer rounded-[12px] border border-white bg-transparent p-0.5 before:absolute before:z-[2] before:block before:h-[18px]
+          before:w-[18px] before:translate-x-0
+          before:rounded-[10px] before:bg-white before:transition-transform before:duration-100 before:ease-linear before:content-[''] dark:border-0 dark:bg-white before:dark:h-[1.2rem] before:dark:w-[1.2rem] before:dark:rounded-[10px] sm:h-8 sm:w-[3.75rem] sm:rounded-[16px] sm:p-1
+          before:sm:h-[1.375rem] before:sm:w-[1.375rem] before:sm:rounded-[12px] before:dark:sm:h-[1.5rem] before:dark:sm:w-[1.5rem] before:dark:sm:rounded-[12px]
           ${windowTop ? 'before:dark:bg-black' : 'before:dark:bg-outer-space'}
           ${darkMode ? 'before:translate-x-[1.375rem] before:sm:translate-x-7' : ''}
         `}

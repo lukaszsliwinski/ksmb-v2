@@ -13,14 +13,14 @@ module.exports = {
         '2/3s': '66vh'
       },
       fontSize: {
-        '8': '.8rem',
-        '9': '.9rem'
+        8: '.8rem',
+        9: '.9rem'
       },
       colors: {
-        'black': '#010101',
-        'supernova': '#fdcc0a',
-        'silver': '#bcbcbc',
-        'boulder': '#797979',
+        black: '#010101',
+        supernova: '#fdcc0a',
+        silver: '#bcbcbc',
+        boulder: '#797979',
         'buttered-rum': '#a5860c',
         'outer-space': '#1e2328',
         'play-light': '#f2f2f2',

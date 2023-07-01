@@ -5,7 +5,7 @@ function Navbar({ darkMode, setDarkMode, windowTop }) {
   return (
     <nav
       className={`
-        fixed z-20 flex h-16 w-full justify-between px-2 sm:px-5 duration-300 ease-in-out
+        fixed z-20 flex h-16 w-full justify-between px-2 duration-300 ease-in-out sm:px-5
         ${windowTop ? 'bg-transparent' : 'bg-outer-space/80 backdrop-blur-md'}
       `}
     >
@@ -28,8 +28,13 @@ function Navbar({ darkMode, setDarkMode, windowTop }) {
             ['koncerty', '#concerts'],
             ['kontakt', '#footer']
           ].map(([title, href]) => (
-            <li key={href} className="text-md sm:text-xl md:text-2xl text-white first-of-type:hidden">
-              <a className="hover:text-silver" href={href}>{title}</a>
+            <li
+              key={href}
+              className="text-md text-white first-of-type:hidden sm:text-xl md:text-2xl"
+            >
+              <a className="hover:text-silver" href={href}>
+                {title}
+              </a>
             </li>
           ))}
         </Scrollspy>
