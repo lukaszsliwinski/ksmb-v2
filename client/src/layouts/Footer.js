@@ -2,8 +2,11 @@ import { ReactComponent as Mail } from '../assets/svg/mail.svg';
 import { ReactComponent as Facebook } from '../assets/svg/facebook.svg';
 import { ReactComponent as Youtube } from '../assets/svg/youtube.svg';
 import DownloadBtn from '../components/DownloadBtn';
+import moment from 'moment';
 
 function Footer({ verticalScreen, isMobile }) {
+  const year = moment().year();
+
   return (
     <section
       className={`
@@ -74,7 +77,7 @@ function Footer({ verticalScreen, isMobile }) {
       </div>
 
       <div className="mt-6 mb-2 flex w-full justify-center">
-        <p className="text-sm">&copy; 2021-2023 KSMICROBAND</p>
+        <p className="text-sm">&copy; 2021-{year} KSMICROBAND</p>
       </div>
     </section>
   );
