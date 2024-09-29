@@ -26,7 +26,7 @@ function Navbar({ darkMode, setDarkMode, windowTop }) {
             ['o nas', '#about'],
             ['muzyka', '#music'],
             ['koncerty', '#concerts'],
-            ['kontakt', '#footer']
+            ['linki', '#footer']
           ].map(([title, href]) => (
             <li
               key={href}

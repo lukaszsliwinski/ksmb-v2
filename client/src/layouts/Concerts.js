@@ -53,19 +53,6 @@ function Concerts({ verticalScreen }) {
                   możliwość łączenia jej z&nbsp;innymi działaniami artystycznymi dla jeszcze
                   ciekawszego efektu.
                 </p>
-                <div className="flex justify-center">
-                  <a
-                    href="https://www.facebook.com/KSMicroband/events"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    role="button"
-                    className="
-                      my-1 flex items-end rounded border-2 border-outer-space px-6 py-2 text-xs font-medium uppercase leading-tight text-outer-space transition duration-150 ease-in-out
-                      focus:outline-none focus:ring-0 hover:border-supernova hover:text-supernova dark:border-white dark:text-white dark:hover:border-supernova dark:hover:text-supernova"
-                  >
-                    najbliższe koncerty <Events className="ml-1 inline-block h-4 w-4" />
-                  </a>
-                </div>
               </div>
             </div>
           </div>
