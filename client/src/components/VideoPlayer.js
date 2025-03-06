@@ -1,14 +1,15 @@
 import { useState } from 'react';
 
+// Video player component
 function VideoPlayer() {
-  // videos list with urls
+  // Videos list with urls
   const videos = [
     ['Hague (Home Sessions #1)', 'TPnMZWR_2To'],
     ['Sangria (In The Nature #2)', '4IErWZv3MCE'],
     ['Swinger Dance (In The Nature #1)', '_xKkcRnJPlc']
   ];
 
-  // state
+  // State
   const [url, setUrl] = useState(videos[0][1]);
 
   return (

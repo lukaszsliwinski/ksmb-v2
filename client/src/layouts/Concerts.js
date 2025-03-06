@@ -2,6 +2,7 @@ import { ReactComponent as Events } from '../assets/svg/events.svg';
 import { XyzTransition } from '@animxyz/react';
 import concert from '../assets/photos/concert.jpg';
 
+// Concerts section component
 function Concerts({ verticalScreen }) {
   return (
     <section

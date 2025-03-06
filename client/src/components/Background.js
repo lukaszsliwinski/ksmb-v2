@@ -1,3 +1,4 @@
+// Background photo component
 function Background({ bgPhoto }) {
   return (
     <div

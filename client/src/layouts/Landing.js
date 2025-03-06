@@ -1,6 +1,7 @@
 import { ReactComponent as Logo } from '../assets/svg/logo.svg';
 import { XyzTransition } from '@animxyz/react';
 
+// Landing page component
 function Landing({ verticalScreen }) {
   return (
     <div

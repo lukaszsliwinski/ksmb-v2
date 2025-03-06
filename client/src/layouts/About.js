@@ -4,6 +4,7 @@ import kuba from '../assets/photos/kuba.jpg';
 import lukasz from '../assets/photos/lukasz.jpg';
 import microband from '../assets/photos/microband.jpg';
 
+// About section component
 function About({ verticalScreen }) {
   return (
     <section

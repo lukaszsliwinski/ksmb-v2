@@ -1,8 +1,8 @@
 import { XyzTransition } from '@animxyz/react';
-
 import AudioPlayer from '../components/AudioPlayer';
 import VideoPlayer from '../components/VideoPlayer';
 
+// Music component - wrapper for AudioPlayer and VideoPlayer components
 function Music({ verticalScreen }) {
   return (
     <section

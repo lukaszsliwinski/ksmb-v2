@@ -1,6 +1,7 @@
 import Scrollspy from 'react-scrollspy';
 import DarkModeSwitch from '../components/DarkModeSwitch';
 
+// Navigation bar component
 function Navbar({ darkMode, setDarkMode, windowTop }) {
   return (
     <nav

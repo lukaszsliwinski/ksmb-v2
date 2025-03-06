@@ -21,15 +21,11 @@ app.use(express.static('public'));
 app.use(express.static(path.resolve(__dirname, '../client/build')));
 
 
-// songs API
+// Songs API
 app.get('/api/mp3/:title', (req, res) => {
     res.sendFile(path.resolve(__dirname, './api/mp3', `${req.params.title}.mp3`));
 })
 
-// pdf API
-app.get('/api/pdf/:file', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './api/pdf', `${req.params.file}.pdf`));
-})
 
 // All other GET requests not handled before will return our React app
 app.get('/', (req, res) => {

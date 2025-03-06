@@ -1,6 +1,7 @@
 import { ReactComponent as MoonIcon } from '../assets/svg/moon.svg';
 import { ReactComponent as SunIcon } from '../assets/svg/sun.svg';
 
+// Dark mode switch component
 function DarkModeSwitch({ darkMode, setDarkMode, windowTop }) {
   return (
     <div onClick={() => setDarkMode(!darkMode)}>

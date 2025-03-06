@@ -1,9 +1,8 @@
-import { ReactComponent as Mail } from '../assets/svg/mail.svg';
 import { ReactComponent as Facebook } from '../assets/svg/facebook.svg';
 import { ReactComponent as Youtube } from '../assets/svg/youtube.svg';
-import DownloadBtn from '../components/DownloadBtn';
 import moment from 'moment';
 
+// Footer component
 function Footer({ verticalScreen, isMobile }) {
   const year = moment().year();
 

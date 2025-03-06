@@ -6,18 +6,19 @@ import { ReactComponent as Next } from '../assets/svg/next.svg';
 import { ReactComponent as Prev } from '../assets/svg/prev.svg';
 import { ReactComponent as Vinyl } from '../assets/svg/vinyl.svg';
 
+// Audio player component
 function AudioPlayer() {
-  // state
+  // State
   const [songId, setSongId] = useState(0);
   const [playing, setPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState('00:00');
   const [duration, setDuration] = useState('00:00');
 
-  // refs
+  // Refs
   const audio = useRef();
   const progress = useRef();
 
-  // songs list with urls
+  // Songs list with urls
   const songs = [
     ['Zapowiedź', 'api/mp3/zapowiedz'],
     ['Hawai', 'api/mp3/hawai'],
@@ -32,7 +33,7 @@ function AudioPlayer() {
     ['7 na 7', 'api/mp3/7na7']
   ];
 
-  // update progress bar when playing
+  // Update progress bar when playing
   useEffect(() => {
     let timer;
     if (playing) {
@@ -48,7 +49,7 @@ function AudioPlayer() {
     return () => clearInterval(timer);
   }, [playing]);
 
-  // format time to 00:00
+  // Format time to 00:00
   const calculateTime = (s) => {
     const minutes = Math.floor(s / 60);
     const returnedMinutes = minutes < 10 ? `0${minutes}` : `${minutes}`;
@@ -57,7 +58,7 @@ function AudioPlayer() {
     return `${returnedMinutes}:${returnedSeconds}`;
   };
 
-  // play song when press title on playlist
+  // Play song when press title on playlist
   const playByTitle = (id) => {
     if (!playing) {
       setPlaying(true);
@@ -69,13 +70,13 @@ function AudioPlayer() {
     setSongId(id);
   };
 
-  // play/pause current song
+  // Play/pause current song
   const playPauseCurrent = () => {
     playing ? audio.current.pause() : audio.current.play();
     setPlaying(!playing);
   };
 
-  // switch to previous song
+  // Switch to previous song
   const previousSong = () => {
     let id = songId;
     id === 0 ? (id = songs.length - 1) : (id -= 1);
@@ -86,7 +87,7 @@ function AudioPlayer() {
     setCurrentTime(calculateTime(audio.current.currentTime));
   };
 
-  // switch to next song
+  // Switch to next song
   const nextSong = () => {
     let id = songId;
     id < songs.length - 1 ? (id += 1) : (id = 0);
@@ -97,13 +98,13 @@ function AudioPlayer() {
     setCurrentTime(calculateTime(audio.current.currentTime));
   };
 
-  // set current time by progress bar position
+  // Set current time by progress bar position
   const changeRangeValue = () => {
     audio.current.currentTime = parseInt((audio.current.duration * progress.current.value) / 100);
     setCurrentTime(calculateTime(audio.current.currentTime));
   };
 
-  // handle if song ends
+  // Handle if song ends
   const handleEnd = () => {
     let id = songId;
     if (id < songs.length - 1) {
