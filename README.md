@@ -4,6 +4,8 @@
 
 **[www.ksmicroband.lukaszsliwinski.pl](http://www.ksmicroband.lukaszsliwinski.pl)**
 
+![Website Preview](./preview.gif)
+
 ## About project
 
 Website of my last musical duo with custom music player.
