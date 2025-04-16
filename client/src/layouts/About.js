@@ -1,8 +1,8 @@
 import { XyzTransition } from '@animxyz/react';
 
-import kuba from '../assets/photos/kuba.jpg';
-import lukasz from '../assets/photos/lukasz.jpg';
-import microband from '../assets/photos/microband.jpg';
+import kuba from '../assets/photos/kuba.webp';
+import lukasz from '../assets/photos/lukasz.webp';
+import microband from '../assets/photos/microband.webp';
 
 // About section component
 function About({ verticalScreen }) {

@@ -29,11 +29,11 @@ module.exports = {
         'yt-btn': '#ff0000'
       },
       backgroundImage: {
-        'photo-1': 'url("./photos/background1.jpg")',
-        'photo-2': 'url("./photos/background2.jpg")',
-        'photo-3': 'url("./photos/background3.jpg")',
-        'photo-4': 'url("./photos/background4.jpg")',
-        'photo-5': 'url("./photos/background5.jpg")'
+        'photo-1': 'url("./photos/background1.webp")',
+        'photo-2': 'url("./photos/background2.webp")',
+        'photo-3': 'url("./photos/background3.webp")',
+        'photo-4': 'url("./photos/background4.webp")',
+        'photo-5': 'url("./photos/background5.webp")'
       },
       backgroundSize: {
         '100%': '100%'
