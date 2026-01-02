@@ -14,10 +14,10 @@ services:
       - "traefik.http.routers.ksmb.entrypoints=websecure"
       - "traefik.http.routers.ksmb.tls.certresolver=le"
       - "traefik.http.services.ksmb.loadbalancer.server.port=${PORT}"
-      - "traefik.http.middlewares.podatnik-hsts.headers.stsSeconds=31536000"
-      - "traefik.http.middlewares.podatnik-hsts.headers.stsIncludeSubdomains=true"
-      - "traefik.http.middlewares.podatnik-hsts.headers.stsPreload=true"
-      - "traefik.http.routers.podatnik.middlewares=podatnik-hsts@docker"
+      - "traefik.http.middlewares.ksmb-hsts.headers.stsSeconds=31536000"
+      - "traefik.http.middlewares.ksmb-hsts.headers.stsIncludeSubdomains=true"
+      - "traefik.http.middlewares.ksmb-hsts.headers.stsPreload=true"
+      - "traefik.http.routers.ksmb.middlewares=ksmb-hsts@docker"
     networks:
       - web
     expose:
